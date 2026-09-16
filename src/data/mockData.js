@@ -3,30 +3,32 @@ export const MOCK_VIDEOS = {
     id: "prob_vid_101",
     title: "The Plastic Planet Crisis: Impact on Humans & Wildlife",
     duration: "10:00",
-    embedUrl: "https://www.youtube.com/embed/ggh0Ptk3VGE", // Educational plastic pollution documentary
+    embedUrl: "https://www.youtube.com/embed/ggh0Ptk3VGE",
     thumbnail: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=800&q=80",
-    description: "An in-depth 10-minute documentary exploring microplastic bioaccumulation, marine animal mortality in local water bodies, and human chemical exposure.",
+    description: "An in-depth 10-minute documentary exploring single-use plastics (bags, bottles, cups), microplastic bioaccumulation, marine animal mortality, and chemical hazards in soil and drinking water.",
     chapters: [
-      { time: "0:00", title: "Introduction to Single-Use Plastic Surge" },
-      { time: "2:15", title: "Impact on Local Rivers & Marine Ecosystems" },
-      { time: "4:40", title: "Microplastics in Human Bloodstream & Soil" },
-      { time: "7:10", title: "Landfill Methane Emissions & Open Burning" },
-      { time: "9:00", title: "The Urgent Need for Small-Scale Action" }
+      { time: "0:00", title: "Single-Use Plastic Surge (Bags, Bottles, Cups)" },
+      { time: "2:15", title: "Impact on Local Rivers & Marine Wildlife" },
+      { time: "4:40", title: "Microplastics in Human Bloodstream & Food Chain" },
+      { time: "7:10", title: "Toxic Open Air Burning & Landfill Methane" },
+      { time: "9:00", title: "The Urgent Call for Small-Scale Action" }
     ]
   },
   solution: {
     id: "sol_vid_102",
-    title: "Zero-Waste Blueprint: Actionable Solutions for Communities",
+    title: "Zero-Waste Blueprint: 7 Solutions for a Plastic-Free Tomorrow",
     duration: "10:00",
-    embedUrl: "https://www.youtube.com/embed/6jQ7y_qQYUA", // Educational recycling solutions documentary
+    embedUrl: "https://www.youtube.com/embed/6jQ7y_qQYUA",
     thumbnail: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
-    description: "Discover 10 powerful, low-cost solutions that individuals, small vendors, and college students can implement today to eliminate plastic waste.",
+    description: "Discover 7 powerful, low-cost plastic reduction solutions that students, vendors, and households can implement immediately to create a circular economy.",
     chapters: [
-      { time: "0:00", title: "Circular Economy at Campus & Local Level" },
-      { time: "2:30", title: "Replacing Plastic Bags with Jute & Cloth" },
-      { time: "4:45", title: "Building Smart IoT Recycling Bins" },
-      { time: "6:50", title: "Community Organic Waste Composting" },
-      { time: "8:40", title: "Empowering Local Green Vendors & Rewards" }
+      { time: "0:00", title: "1. IoT Smart Dustbins with ESP32 & Rewards" },
+      { time: "1:45", title: "2. Eco Marketplace & Direct Buying Dashboard" },
+      { time: "3:20", title: "3. Smart Recycling Hubs & Segregation Stations" },
+      { time: "5:00", title: "4. Circular Cup Library for Eateries" },
+      { time: "6:30", title: "5. Plastic Upcycling & Eco-Brick Furniture" },
+      { time: "8:00", title: "6. Green Transport & Packaging Reduction" },
+      { time: "9:15", title: "7. EcoSphere Rewards & EcoCoins Gamification" }
     ]
   }
 };
@@ -34,7 +36,7 @@ export const MOCK_VIDEOS = {
 export const LIVE_POLLUTION_METRICS = {
   plasticDumpedPerSecKg: 420.5,
   oceanMicroplasticsTons: 15420900,
-  airQualityIndex: 168, // Moderate-Unhealthy
+  airQualityIndex: 168,
   landfillCapacityUsedPct: 87.4,
   localSingleUseBagsDaily: 14500,
   carbonConcentrationPpm: 422.4
@@ -43,38 +45,38 @@ export const LIVE_POLLUTION_METRICS = {
 export const PROBLEM_DISADVANTAGES = [
   {
     id: "dis_1",
-    title: "Microplastics in Human Food Chain",
+    title: "Microplastics in Human Food Chain & Bloodstream",
     icon: "Activity",
     severity: "CRITICAL",
-    impact: "Humans ingest an average of 5 grams of microplastics weekly—equivalent to a credit card—causing endocrine disruption and cellular inflammation.",
-    stat: "5g/week",
+    impact: "Humans ingest an average of 5 grams of microplastics weekly (the mass of a credit card), causing severe endocrine disruption, cytotoxicity, and cellular inflammation.",
+    stat: "5g / Week Ingestion",
     image: "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "dis_2",
-    title: "Wildlife Mortality & Entanglement",
+    title: "Marine & Terrestrial Wildlife Mortality",
     icon: "AlertTriangle",
     severity: "HIGH",
-    impact: "Over 1 million marine birds and 100,000 marine mammals die annually due to plastic ingestion and net entanglement in coastal regions.",
-    stat: "1M+ Birds/Year",
+    impact: "Over 1 million seabirds and 100,000 marine animals die annually from plastic bag ingestion and six-pack ring entanglement in coastal waters.",
+    stat: "1M+ Wildlife / Year",
     image: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "dis_3",
-    title: "Toxic Open Air Plastic Burning",
+    title: "Toxic Open-Air Burning & Carcinogenic Dioxins",
     icon: "Flame",
     severity: "CRITICAL",
-    impact: "Unregulated burning of PVC and polythene releases carcinogenic dioxins, furans, and black carbon, drastically worsening local AQI.",
-    stat: "Toxic Dioxins",
+    impact: "Uncontrolled incineration of PVC and polythene releases carcinogenic dioxins, furans, and black carbon, drastically degrading local air quality (AQI 300+).",
+    stat: "Dioxins & Furans",
     image: "https://images.unsplash.com/photo-1565697669460-642146e91986?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "dis_4",
-    title: "Soil Infertility & Agricultural Runoff",
+    title: "Soil Infertility & Agricultural Drain Blockages",
     icon: "ZapOff",
     severity: "HIGH",
-    impact: "Plastic mulch and buried polythene block earthworm movement, decrease soil water retention by 45%, and leach toxic phthalates.",
-    stat: "-45% Retention",
+    impact: "Discarded plastic films block root aeration, lower soil water retention by 45%, choke agricultural storm channels, and leach toxic phthalates into the water table.",
+    stat: "-45% Soil Retention",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80"
   }
 ];
@@ -82,106 +84,20 @@ export const PROBLEM_DISADVANTAGES = [
 export const SEVEN_SOLUTIONS = [
   {
     id: "sol_1",
-    title: "Switch to Biodegradable Cloth & Jute Bags",
-    category: "Vendor & Consumer Action",
-    summary: "Replace single-use polythene bags with washable cotton or denim tote bags and eco plastic prep.",
-    heroImage: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Saves ~500 plastic bags per person annually • Saves ₹1,500/month for small vendors",
-    videoUrl: "https://www.youtube.com/embed/6jQ7y_qQYUA",
-    watchUrl: "https://www.youtube.com/watch?v=6jQ7y_qQYUA",
-    videoId: "6jQ7y_qQYUA",
-    thumbnailUrl: "https://img.youtube.com/vi/6jQ7y_qQYUA/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: Stitch a Reusable Tote Bag from Old Jean and organic plastic preparation",
-    totalEstimatedBudget: "₹50 - ₹95 per bag (₹0 if using old denim/shirts)",
-    costCuttingTip: "Students can use discarded old jeans or cotton sarees from home to craft 3 sturdy bags for free!",
-    executiveSummary: "Single-use polythene carrier bags are a primary driver of urban drain blockages, agricultural soil contamination, and toxic open-air burning emissions. This blueprint outlines a circular upcycling protocol to convert discarded denim jeans and organic cassava starch biofilm into high-durability reusable totes capable of carrying up to 15kg load.",
-    problemContext: "In tier-2 and tier-3 towns, small grocery vendors consume between 200 to 500 plastic pouches daily. By transitioning to a community-driven cloth tote library and bio-plastic wrap preparation, local ecosystems recover from plastic clogging while vendors save up to ₹18,000 annually in recurring packaging expenses.",
-    technicalArchitecture: {
-      diagramTitle: "Denim Cut Pattern & Box-Stitch Tensile Reinforcement",
-      dimensions: "42cm Width x 48cm Height x 10cm Gusset Bottom",
-      seamStrength: "Double-French Seam with 100% Polyester 40s/2 Thread (Tensile Limit: 18.5 kg)",
-      handleAnchor: "Cross-Box 'X' Stitch (2.5cm x 2.5cm square anchor points with 8 passes)"
-    },
-    materialsNeeded: [
-      { name: "Organic Cotton / Jute / Upcycled Denim Fabric", qty: "1 sq meter (or 1 old pant)", cost: "₹0 - ₹45", source: "Local household / Fabric store, Surampalem" },
-      { name: "Heavy Duty Polyester Thread (Spool 40s/2)", qty: "1 Spool", cost: "₹10", source: "Tailoring Shop near Pragati Gate" },
-      { name: "Woven Cotton Webbing Straps (2.5cm x 60cm x 2)", qty: "2 Strips", cost: "₹20", source: "Local Bag Repair Shop" },
-      { name: "Organic Cassava Starch & Glycerin (For Organic Bio-Film Prep)", qty: "200g Starch + 20ml Glycerin", cost: "₹25", source: "Local Grocery / Chemistry Lab" }
-    ],
-    actionPlan: [
-      "Phase 1 (Preparation & Cutting): Collect discarded denim jeans. Cut legs into two 42cm x 52cm panels.",
-      "Phase 2 (Bio-Plastic Film Prep): Mix cassava starch, water, and glycerol over 80°C heat to cast edible organic produce wrap.",
-      "Phase 3 (Precision Stitching): Execute double French seams on sides and cross-stitch 60cm webbing handles.",
-      "Phase 4 (Deployment & Library Setup): Deploy 50 tote bags at campus canteen checkout counter."
-    ],
-    detailedSteps: [
-      {
-        step: 1,
-        title: "Phase 1: Raw Material Upcycling & Precision Cutting",
-        desc: "Lay out laundered old denim jeans on a flat workbench. Measure and cut a 42cm x 96cm single continuous rectangle panel (or two 42cm x 50cm side panels). Use tailor's chalk to trace a 1.5cm seam allowance along vertical edges. Pin edges together using ballpoint sewing pins to prevent fabric slippage during stitching.",
-        image: "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 2,
-        title: "Phase 2: Organic Cassava Starch Bio-Film Preparation",
-        desc: "To replace plastic inner linings, mix 100g cassava/corn starch with 500ml distilled water, 15ml vegetable glycerin, and 10ml white vinegar in a glass beaker. Heat mixture under continuous stirring at 80°C until it turns into a clear, viscous gel. Spread thinly on Teflon sheets and dry for 24 hours to form a flexible, 100% biodegradable, water-resistant biofilm layer.",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 3,
-        title: "Phase 3: Reinforced Double French Seams & Gusset Bottom",
-        desc: "Stitch down side seams using a 3.5mm straight stitch. Fold seam allowances over and apply a secondary zigzag overcast stitch to prevent fraying under heavy loads. Fold the bottom corners inward by 5cm and stitch transversely to create a flat, 10cm-wide gusset bottom that allows the bag to stand upright when loaded with groceries.",
-        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 4,
-        title: "Phase 4: Handle Cross-Box Reinforcement & Vendor Distribution",
-        desc: "Position 60cm heavy-duty webbing straps 8cm from outer edges along top hem. Fold top rim down by 2.5cm twice. Sew a 2.5cm x 2.5cm box with an diagonal 'X' stitch through both handle ends. Deploy finished bags at Pragati Greenery Club canteen desk under a 'Take a Bag, Leave a Bag' community system.",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
-      }
-    ],
-    fieldDeploymentTesting: {
-      loadTestProtocol: "Load finished tote bag with 15kg sandbag weights and drop from 0.5m height 20 times. Ensure zero seam tearing.",
-      washability: "Machine wash at 40°C or hand wash with mild soap. Tested lifespan: 150+ wash cycles without structural degradation.",
-      costBenefitRatio: "Cost per use = ₹0.04 vs ₹1.50 per single-use plastic pouch."
-    },
-    howToMake: {
-      title: "DIY Denim Upcycled Tote Bag & Organic Plastic Film Recipe",
-      timeRequired: "25 Minutes",
-      toolsNeeded: ["Scissors", "Sewing Machine / Heavy Needle", "Iron", "Ruler", "Glass Beaker & Hot Plate"],
-      localVendors: [
-        { name: "Surya Fabrics & Tailoring", location: "Near Pragati Gate, Surampalem", contact: "+91 98480 12345" },
-        { name: "Kakinada Jute Wholesale Depot", location: "Cinema Road, Kakinada", contact: "+91 884 2345678" }
-      ],
-      blueprintSummary: "Fold old denim leg flat, double-stitch seams, apply cassava organic biofilm lining, attach X-box handles. Replaces 500 plastic bags per year!"
-    },
-    learnFaq: [
-      {
-        q: "Why carry cloth bags over single-use plastic?",
-        a: "A single polythene bag takes 500+ years to decompose and breaks down into toxic microplastics. One washable cloth bag replaces over 500 plastic bags in its lifetime."
-      },
-      {
-        q: "How can small canteen vendors benefit financially?",
-        a: "Vendors spend ~₹1,500 monthly purchasing single-use plastic carry bags. Encouraging reusable totes eliminates this expense while earning vendor green certification."
-      }
-    ]
-  },
-  {
-    id: "sol_2",
-    title: "Build DIY Smart IoT Recycling Dustbins",
-    category: "Tech & Campus Innovation",
-    summary: "Construct low-cost ultrasonic smart bins that track waste fill-level and award instant EcoCoins upon plastic deposit.",
+    title: "1. IoT Smart Dustbin",
+    category: "Smart Tech & IoT Innovation",
+    summary: "Construct low-cost ultrasonic smart bins with automatic servo lids that log fill levels to GCP Cloud and award instant EcoCoins.",
     heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Increases campus recycling sorting rate by 340% • Real-time telemetry on EcoSphere",
+    impactMultiplier: "Increases campus sorting rate by 340% • Real-time telemetry on EcoSphere",
     videoUrl: "https://www.youtube.com/embed/ggh0Ptk3VGE",
     watchUrl: "https://www.youtube.com/watch?v=ggh0Ptk3VGE",
     videoId: "ggh0Ptk3VGE",
     thumbnailUrl: "https://img.youtube.com/vi/ggh0Ptk3VGE/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: ESP32 + Ultrasonic Smart Bin Circuit Blueprint & Code",
+    diyTutorial: "DIY Guide + Video: ESP32 Ultrasonic Smart Bin with Automatic Servo Lid & Cloud Sync",
     totalEstimatedBudget: "₹750 Total (Built by Pragati ECE/CSE Students)",
-    costCuttingTip: "Re-use old plastic dustbins on campus and borrow Arduino kits from college ECE lab to reduce cost to ₹200!",
-    executiveSummary: "Traditional unmonitored waste bins suffer from frequent overflow, leading to unsegregated littering and delayed pickup. This IoT Smart Bin system integrates an ESP32 microcontroller with an HC-SR04 ultrasonic distance sensor, an SG90 automatic servo lid actuator, and an OLED QR-code display to track fill status live over Wi-Fi and reward users automatically.",
-    problemContext: "College campuses generate hundreds of kilograms of discarded PET bottles daily. Without fill-level telemetry, sanitation staff spend inefficient manual hours checking empty bins while overloaded bins spill onto lawns. This open-source hardware solution provides automated lid opening, telemetry logging to GCP Firebase, and student rewards.",
+    costCuttingTip: "Re-use old campus plastic dustbins and borrow microcontroller kits from college ECE lab to reduce cost to ₹200!",
+    executiveSummary: "Traditional unmonitored waste bins suffer from frequent overflow, leading to unsegregated littering and delayed pickup. This IoT Smart Bin system integrates an ESP32 microcontroller with an HC-SR04 ultrasonic distance sensor, an SG90 automatic servo lid actuator, and an OLED QR-code display to track fill status live over Wi-Fi and reward users automatically with EcoCoins.",
+    problemContext: "Educational campuses and public spaces generate hundreds of kilograms of discarded PET bottles daily. Without fill-level telemetry, sanitation staff spend inefficient manual hours checking empty bins while overloaded bins spill onto lawns. This open-source hardware solution provides automated lid opening, telemetry logging to GCP Firebase, and student rewards.",
     technicalArchitecture: {
       diagramTitle: "ESP32 Pinout & Sensor Wiring Topology",
       microcontroller: "ESP32-WROOM-32D (240MHz Dual-Core, 520KB SRAM, Integrated 2.4GHz Wi-Fi)",
@@ -191,10 +107,10 @@ export const SEVEN_SOLUTIONS = [
       powerSystem: "18650 3.7V 2600mAh Li-ion Battery with TP4056 USB-C Charge Controller"
     },
     materialsNeeded: [
-      { name: "ESP32 Wi-Fi Microcontroller Board", qty: "1 Unit", cost: "₹340", source: "Robotics Electronics Store Kakinada / Amazon" },
+      { name: "ESP32 Wi-Fi Microcontroller Board", qty: "1 Unit", cost: "₹340", source: "Robotics Electronics Store Kakinada / Online" },
       { name: "HC-SR04 Ultrasonic Distance Sensor", qty: "1 Unit", cost: "₹75", source: "Pragati ECE Lab / Local Hobby Shop" },
       { name: "SG90 Micro Servo Motor (Automatic Lid)", qty: "1 Unit", cost: "₹110", source: "Electronics Lab Component Kit" },
-      { name: "0.96 inch OLED I2C Display (QR Code)", qty: "1 Unit", cost: "₹145", source: "Online Robocraze / Local Supplier" },
+      { name: "0.96 inch OLED I2C Display (QR Code)", qty: "1 Unit", cost: "₹145", source: "Robocraze / Local Supplier" },
       { name: "5V 2A Power Adapter / Solar Battery", qty: "1 Unit", cost: "₹80", source: "Recycled Mobile Charger" }
     ],
     actionPlan: [
@@ -207,32 +123,32 @@ export const SEVEN_SOLUTIONS = [
       {
         step: 1,
         title: "Phase 1: Microcontroller Breadboard Pinout & Signal Wiring",
-        desc: "Place the ESP32 board onto a 400-point solderless breadboard. Connect VCC pins of HC-SR04, SG90 Servo, and OLED display to the VEXT 5V rail, and ground pins to the common GND rail. Connect HC-SR04 TRIG to GPIO 5, ECHO to GPIO 18, Servo Signal line to GPIO 13, OLED SDA to GPIO 21, and OLED SCL to GPIO 22. Double-check wire polarity to avoid short circuits.",
+        desc: "Place the ESP32 board onto a 400-point solderless breadboard. Connect VCC pins of HC-SR04, SG90 Servo, and OLED display to the 5V rail, and ground pins to the common GND rail. Connect HC-SR04 TRIG to GPIO 5, ECHO to GPIO 18, Servo Signal line to GPIO 13, OLED SDA to GPIO 21, and OLED SCL to GPIO 22.",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 2,
         title: "Phase 2: Arduino C++ Firmware Uploading & Wi-Fi Provisioning",
-        desc: "Open Arduino IDE. Install ESP32 Board Manager (v2.0.11) and libraries: ESP32Servo, Adafruit_SSD1306, and HTTPClient. Load the open-source EcoSphere C++ firmware snippet. Update SSID, WPA2 password, and GCP Firebase REST endpoint URL. Click Upload at 115200 baud rate and verify serial monitor output 'Wi-Fi Connected! IP: 192.168.1.104'.",
+        desc: "Open Arduino IDE. Install ESP32 Board Manager and libraries: ESP32Servo, Adafruit_SSD1306, and HTTPClient. Load the open-source EcoSphere C++ firmware snippet. Update SSID, WPA2 password, and GCP Firebase REST endpoint URL. Click Upload at 115200 baud rate and verify serial monitor output.",
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 3,
         title: "Phase 3: Mechanical Servo Arm & Sensor Enclosure Mounting",
-        desc: "Using a 20mm hole saw, drill two circular apertures on the bin lid for the ultrasonic transducer eyes. Secure the sensor using hot melt adhesive inside a 3D-printed IP65 weather-resistant casing. Screw the SG90 horn lever to the bin's hinged push-flap using M2 self-tapping screws so a 90° rotation swings the lid fully open for 4 seconds.",
+        desc: "Using a 20mm hole saw, drill two circular apertures on the bin lid for the ultrasonic transducer eyes. Secure the sensor using hot melt adhesive inside an IP65 casing. Screw the SG90 horn lever to the bin's hinged push-flap using M2 screws so a 90° rotation swings the lid fully open for 4 seconds.",
         image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 4,
         title: "Phase 4: Sensor Calibration, GCP Telemetry & QR Reward Testing",
-        desc: "Set empty baseline distance (e.g., 100cm to bottom of bin). Test with discarded PET bottles: when a bottle falls past 15cm distance threshold, the code increments plastic counter, opens the lid via PWM signal, and renders a dynamic EcoCoins reward QR code on the OLED. Verify live JSON payload POST to EcoSphere Cloud API.",
+        desc: "Set empty baseline distance (100cm). Test with discarded PET bottles: when a bottle falls past the 15cm threshold, the code increments plastic counter, opens lid via PWM signal, and renders a dynamic EcoCoins reward QR code on the OLED. Verify live JSON payload POST to EcoSphere Cloud API.",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
       }
     ],
     fieldDeploymentTesting: {
-      sensorAccuracy: "Ultrasonic range error ±0.3cm between 2cm and 400cm.",
-      batteryLife: "Deep-sleep power consumption = 15µA. Operates for 24 days on single 18650 cell.",
-      failSafe: "If Wi-Fi drops, telemetry records queue locally in ESP32 SPIFFS flash memory and auto-sync upon reconnection."
+      loadTestProtocol: "Ultrasonic range error ±0.3cm between 2cm and 400cm.",
+      washability: "Deep-sleep power consumption = 15µA. Operates for 24 days on single 18650 cell.",
+      costBenefitRatio: "If Wi-Fi drops, telemetry records queue locally in ESP32 SPIFFS flash memory and auto-sync upon reconnection."
     },
     howToMake: {
       title: "ESP32 Ultrasonic Smart Recycling Bin Blueprint",
@@ -247,7 +163,7 @@ export const SEVEN_SOLUTIONS = [
     learnFaq: [
       {
         q: "How does the bin reward students with EcoCoins?",
-        a: "When a plastic bottle drops past the ultrasonic sensor, the distance changes instantly, triggering the servo lid to close briefly while displaying a dynamic QR code for +15 EcoCoins."
+        a: "When a plastic bottle drops past the ultrasonic sensor, the distance change triggers the servo lid while generating a dynamic QR code on the OLED for +15 EcoCoins."
       },
       {
         q: "What is the battery lifetime?",
@@ -256,355 +172,273 @@ export const SEVEN_SOLUTIONS = [
     ]
   },
   {
-    id: "sol_3",
-    title: "Community Organic Waste Composting",
-    category: "Waste Segregation",
-    summary: "Turn food scraps and organic kitchen waste into nutrient-rich compost for greenery club plantations using modern tech.",
-    heroImage: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Diverts 60% of household waste from landfills • Produces ₹400 worth compost monthly",
-    videoUrl: "https://www.youtube.com/embed/Yp_8KjW9VdY",
-    watchUrl: "https://www.youtube.com/watch?v=Yp_8KjW9VdY",
-    videoId: "Yp_8KjW9VdY",
-    thumbnailUrl: "https://img.youtube.com/vi/Yp_8KjW9VdY/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: 3-Bin Apartment & Hostel Aerobic Composting System and using modern tech",
-    totalEstimatedBudget: "₹450 Total (3-Tier Terracotta / Bucket System)",
-    costCuttingTip: "Use 3 stackable old paint buckets drilled with 5mm air holes to build a 100% free home composting unit!",
-    executiveSummary: "Organic wet waste accounts for over 55% of municipal solid waste in residential hostels and dining halls. When buried anaerobically in landfills, organic waste releases potent methane gas (CH4) with 28x the global warming potential of CO2. This 3-bin aerobic composting system utilizes bio-inoculum, controlled moisture monitoring, and vertical stacking to convert organic waste into dark, nutrient-packed compost within 45 days.",
-    problemContext: "College canteens throw away up to 120 kg of vegetable trimmings and cooked food scraps daily. By implementing a decentralized 3-bin aerobic composting cluster equipped with soil temperature/moisture probes, educational institutions can produce organic fertilizer for campus gardens while saving garbage transport costs.",
+    id: "sol_2",
+    title: "2. Eco Marketplace",
+    category: "Commerce & Buying Dashboard",
+    summary: "Online eco-marketplace connecting users to verified vendors for cloth bags, steel bottles, bamboo cutlery, and zero-waste items with EcoCoin discounts.",
+    heroImage: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
+    impactMultiplier: "Replaces 50,000+ single-use plastic items annually • Empowers 12+ green partner companies",
+    videoUrl: "https://www.youtube.com/embed/6jQ7y_qQYUA",
+    watchUrl: "https://www.youtube.com/watch?v=6jQ7y_qQYUA",
+    videoId: "6jQ7y_qQYUA",
+    thumbnailUrl: "https://img.youtube.com/vi/6jQ7y_qQYUA/hqdefault.jpg",
+    diyTutorial: "Vendor & Consumer Guide: Purchasing & Listing Plastic-Free Alternatives Online",
+    totalEstimatedBudget: "₹35 - ₹299 (Products) / 100% Free for Vendors to List",
+    costCuttingTip: "Redeem your earned EcoCoins at checkout to get instant cash discounts (100 Coins = ₹50 OFF)!",
+    executiveSummary: "The Eco Marketplace acts as the central decentralized commerce engine of EcoSphere, bridging sustainable manufacturers, local cottage industries, and conscious buyers. Through direct online checkout, secure UPI/card payment gateways, and tokenized EcoCoin discounts, it drives mass adoption of reusable cotton totes, copper flasks, and bamboo straws.",
+    problemContext: "Consumers frequently resort to single-use plastics due to lack of immediate access to affordable alternatives. The Eco Marketplace removes friction by providing curated certified products, verified partner sellers, transparent plastic-offset metrics, and gamified discounts.",
     technicalArchitecture: {
-      systemDesign: "3-Tier Stackable Aerobic Bioreactor Containers (Top: Active Ingestion, Middle: Curing, Bottom: Harvest)",
-      aerationParameters: "Forty-eight 5mm sidewall drill holes providing passive convection airflow (Dissolved O2 > 10%)",
-      carbonToNitrogenRatio: "C:N Ratio optimized at 30:1 (2 parts dry brown leaves/sawdust to 1 part green kitchen waste)",
-      moistureRange: "45% - 60% Moisture Content (Tested via hand-squeeze method: damp like a wrung-out sponge)",
-      temperaturePhases: "Mesophilic (20-40°C for 3 days) -> Thermophilic (55-65°C for pathogen breakdown) -> Curing (30°C)"
+      diagramTitle: "Marketplace Cart, Payment Gateway & Ledger Architecture",
+      paymentGateway: "Simulated 256-bit Encrypted Multi-Modal Gateway (Google Pay, UPI QR, Cards)",
+      discountEngine: "Dynamic EcoCoins Burn Rate: 1 EcoCoin = ₹0.50 Direct Cart Deduction",
+      inventorySync: "Real-time GCP Cloud Firestore Product Catalog with Vendor Self-Listing API",
+      invoiceProtocol: "Instant Digital Tax Invoice generation with Plastic Offset Audit Certificate"
     },
     materialsNeeded: [
-      { name: "3-Tier Stackable Terracotta Pots / 20L Plastic Buckets", qty: "3 Containers", cost: "₹350", source: "Surampalem Local Pottery Works / Hardware Store" },
-      { name: "Compressed Cocopeat Block (5kg)", qty: "1 Block", cost: "₹65", source: "Greenery Nursery near College" },
-      { name: "Bio-Microbial Inoculum Powder (Lactobacillus & Trichoderma)", qty: "250 grams", cost: "₹35", source: "Agricultural Co-op Store" },
-      { name: "Crushed Dry Leaves & Sawdust (Brown Carbon Layer)", qty: "1 Bag", cost: "Free", source: "Pragati Campus Lawn Cleanup" }
+      { name: "Organic Jute & Heavy Cotton Bags (Bulk Pack)", qty: "1 Bundle (100 Pcs)", cost: "₹35 / bag", source: "Kakinada Jute Depot / Eco-Store" },
+      { name: "Food-Grade 304 Stainless Steel Water Bottles", qty: "1 Unit", cost: "₹249", source: "Pragati Eco-Store / BambuCraft" },
+      { name: "Organic Bamboo Straws & Cleaning Brush Kit", qty: "Pack of 6", cost: "₹69", source: "GreenSprout India" },
+      { name: "Areca Palm Pressed Leaf Plates & Bowls", qty: "Pack of 25", cost: "₹110", source: "Surampalem Cottage Industry" }
     ],
     actionPlan: [
-      "Phase 1 (Container Fabrication): Drill 5mm aeration holes on bin perimeter. Prepare 2-inch cocopeat base in Bin 1.",
-      "Phase 2 (Daily Waste Layering & Ratio Control): Add green kitchen waste daily, covered by 2x dry leaves + microbial powder.",
-      "Phase 3 (Vertical Rotation Cycle): When Bin 1 fills (day 20), move to middle slot; place empty Bin 2 on top.",
-      "Phase 4 (Harvesting & Sifting): After 45 days, sift black gold compost through 5mm mesh screen for campus soil enrichment."
+      "Phase 1 (Vendor Onboarding): Verified local vendors submit sustainable product listings with plastic-offset ratings.",
+      "Phase 2 (Direct Online Shopping): Users browse catalog, filter by product category, and add items to cart.",
+      "Phase 3 (EcoCoins Discount Redemption): Apply wallet coins to instantly reduce invoice total.",
+      "Phase 4 (Secure Checkout & Green Receipt): Complete payment via Google Pay or UPI and download instant green receipt."
     ],
     detailedSteps: [
       {
         step: 1,
-        title: "Phase 1: Container Fabrication & Convection Air Hole Drilling",
-        desc: "Take three 20-liter heavy-duty HDPE buckets or terracotta pots. Using a 5mm drill bit, bore 16 evenly spaced holes around the upper circumference and 8 holes on the bottom base plate of each bucket. This creates a natural chimney effect for oxygen circulation, suppressing anaerobic odor-causing bacteria.",
-        image: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 1: Catalog Browsing & Verified Vendor Certification",
+        desc: "Explore verified vendors including GreenSprout India, BambuCraft, and Pragati Campus Eco-Store. Inspect itemized sustainability specs, customer ratings, and exact plastic reduction kg metrics per item.",
+        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 2,
-        title: "Phase 2: Base Carbon Bedding & Daily 2:1 Layering Protocol",
-        desc: "Hydrate a cocopeat brick in water to expand. Spread a 3-inch layer of expanded cocopeat mixed with dry crushed leaves at the bottom of Bin 1 to absorb excessive leachate moisture. Deposit chopped fruit peels, tea bags, and vegetable scraps daily. Immediately cover scraps with a 1-inch blanket of dry leaves and sprinkle 1 tablespoon of microbial inoculum powder.",
-        image: "https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 2: Add to Cart & EcoCoins Discount Slider",
+        desc: "Select item quantities and proceed to the interactive cart drawer. Use the EcoCoins redemption slider to convert your earned reward balance into instant cash deductions before final payment.",
+        image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 3,
-        title: "Phase 3: Thermophilic Phase Monitoring & Aerobic Turning",
-        desc: "Monitor internal pile temperature using a long-stem dial thermometer. Between days 7 and 14, microbial activity will drive core temperature to 55-65°C, effectively sterilizing weed seeds and harmful pathogens. Turn the pile once weekly using a hand trowel to introduce fresh oxygen and redistribute moisture.",
-        image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 3: Secure Multi-Gateway Payment Processing",
+        desc: "Select preferred payment mode (Google Pay, UPI QR code, Debit/Credit Card, or Canteen Pay-on-Pickup). The encrypted gateway verifies transactions instantly with zero platform fee.",
+        image: "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 4,
-        title: "Phase 4: Curing Phase, 5mm Mesh Sifting & Harvest",
-        desc: "When Bin 1 completes its 45-day curing cycle, the contents transform into dark brown, crumbly compost with an earthy forest floor aroma. Pass the compost through a 5mm wire mesh sieve to remove un-decomposed twigs. Package finished compost for Pragati campus botanical gardens or sell to local farmers.",
-        image: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 4: Instant Order Tracking & Downloadable Green Invoice",
+        desc: "Receive immediate order confirmation accompanied by an official Green Tax Invoice detailing total plastic mass saved and bonus EcoCoins credited to your wallet.",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
       }
     ],
     fieldDeploymentTesting: {
-      odorControlCheck: "Zero unpleasant odor when maintained with 30:1 C:N ratio and O2 > 10%.",
-      pathogenReduction: "Thermophilic heat phase (>55°C for 3 consecutive days) destroys 99.9% of E. coli and Salmonella.",
-      yieldOutput: "100 kg wet kitchen waste yields approx 25 kg cured organic compost."
+      loadTestProtocol: "Processes up to 500 concurrent checkout sessions with sub-second response times.",
+      washability: "100% plastic-free packaging guarantee for all physical product deliveries.",
+      costBenefitRatio: "Saves consumers an average of ₹180/month compared to buying single-use bottled beverages."
     },
     howToMake: {
-      title: "3-Bin Apartment Aerobic Composting System Guide",
-      timeRequired: "45 Mins Initial Setup",
-      toolsNeeded: ["Electric Drill with 5mm Bit", "Hand Trowel", "5mm Wire Mesh Sieve", "Water Sprayer"],
+      title: "Online Buying Dashboard & Eco-Vendor Portal",
+      timeRequired: "Instant Access 24/7",
+      toolsNeeded: ["Web Browser / Mobile Device", "Google Pay / UPI App", "EcoCoins Wallet"],
       localVendors: [
-        { name: "Sri Lakshmi Terracotta Pottery", location: "Surampalem Village Road", contact: "+91 98491 55432" },
-        { name: "Pragati Greenery Nursery", location: "Botanical Garden Block, Pragati Campus", contact: "greenery@pragati.ac.in" }
+        { name: "Pragati Campus Eco-Store", location: "Near Main Gate, Pragati College", contact: "+91 98480 12345" },
+        { name: "GreenSprout India Wholesale", location: "Surampalem Industrial Area", contact: "+91 884 2345678" }
       ],
-      blueprintSummary: "Layer 2:1 dry leaves to wet food peels, keep moist like a squeezed sponge, harvest dark compost in 45 days!"
+      blueprintSummary: "Browse eco items, apply EcoCoins for cash discounts, check out via Google Pay, get zero-plastic deliveries!"
     },
     learnFaq: [
       {
-        q: "Does home aerobic composting smell bad?",
-        a: "No! When maintained with a 2:1 carbon (browns) to nitrogen (greens) ratio with proper aeration holes, aerobic decomposition produces zero bad odor."
+        q: "How can vendors list their products on the Eco Marketplace?",
+        a: "Vendors click 'List Your Product' on the marketplace tab, submit product specs and photos, which are approved within 2 hours by Greenery Club admins."
       },
       {
-        q: "What items should NOT be put in the compost bin?",
-        a: "Avoid non-biodegradable plastics, meat, dairy, oil, cooked gravies, and pet feces."
+        q: "Can I use EcoCoins to buy products completely free?",
+        a: "Yes! Up to 50% of an order's total value can be covered directly using your accumulated EcoCoins balance."
+      }
+    ]
+  },
+  {
+    id: "sol_3",
+    title: "3. Smart Recycling Hub",
+    category: "Infrastructure & Collection",
+    summary: "Establish decentralized small-scale recycling stations with automated sorting, digital drop-off logging, and campus collection maps.",
+    heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80",
+    impactMultiplier: "Diverts 85% of campus polymer waste from landfills • 3 Active Stations",
+    videoUrl: "https://www.youtube.com/embed/ggh0Ptk3VGE",
+    watchUrl: "https://www.youtube.com/watch?v=ggh0Ptk3VGE",
+    videoId: "ggh0Ptk3VGE",
+    thumbnailUrl: "https://img.youtube.com/vi/ggh0Ptk3VGE/hqdefault.jpg",
+    diyTutorial: "Station Blueprint: Setting Up a 3-Stream Smart Recycling Kiosk on Campus",
+    totalEstimatedBudget: "₹1,200 (3-Bin Station Fabrication)",
+    costCuttingTip: "Use color-coded upcycled oil drums with stencil spray paint for durable outdoor recycling hubs!",
+    executiveSummary: "Unsegregated waste dumping renders recyclable polymers unusable due to cross-contamination with food grease. The Smart Recycling Hub implements a 3-stream segregated collection architecture (PET Bottles, Soft MLP Wrappers, and Rigid Plastics) connected to real-time IoT load-cells and mobile drop-off logging.",
+    problemContext: "Over 80% of plastic thrown into general trash bins is never recycled because post-collection manual sorting is labor-intensive and costly. By implementing localized Smart Recycling Hubs at high-footfall spots, source-level purity reaches 98%, making immediate mechanical reprocessing possible.",
+    technicalArchitecture: {
+      diagramTitle: "3-Stream Segregation & Ultrasonic Fill-Level Matrix",
+      stream1: "Clear PET / HDPE Bottles (Color Code: Emerald Green - Target Density: High Value)",
+      stream2: "Multi-Layer Plastic Wrappers (Color Code: Amber Orange - Routed to EcoBricks)",
+      stream3: "Rigid Polypropylene & Cutlery (Color Code: Sky Blue - Routed to Shredder)",
+      telemetryLink: "LoRaWAN / Wi-Fi Mesh linking all campus bins to central EcoSphere telemetry"
+    },
+    materialsNeeded: [
+      { name: "200L Heavy-Duty Segregated HDPE Drums", qty: "3 Barrels", cost: "₹600", source: "Surampalem Hardware Supply" },
+      { name: "Waterproof Weather Stencil Labels & Paint", qty: "1 Kit", cost: "₹150", source: "Local Paint Depot" },
+      { name: "HC-SR04 Ultrasonic Distance Sensor Modules", qty: "3 Units", cost: "₹225", source: "ECE Labs" },
+      { name: "Digital QR Check-in Plaque", qty: "3 Plates", cost: "₹75", source: "Printing Shop Pragati Gate" }
+    ],
+    actionPlan: [
+      "Phase 1 (Site Selection): Map high-waste traffic zones (Canteen, Library Quadrangle, Hostel Corridors).",
+      "Phase 2 (Bin Fabrication & Stenciling): Paint drums in standard color codes with clear visual icon signage.",
+      "Phase 3 (Sensor & QR Deployment): Install IoT fill sensors and adhesive reward check-in QR codes.",
+      "Phase 4 (Squad Schedule & Hauling): Coordinate weekly pickup with Greenery Club volunteer squads."
+    ],
+    detailedSteps: [
+      {
+        step: 1,
+        title: "Phase 1: Footfall Mapping & Kiosk Zoning",
+        desc: "Survey campus footfall density. Position 3-stream hubs within 30 meters of food preparation and beverage vending zones to intercept single-use plastics immediately after use.",
+        image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 2,
+        title: "Phase 2: Color-Coded Drum Fabrication & Apertures",
+        desc: "Cut custom-shaped entry apertures: round holes for bottles, narrow horizontal slots for soft film wrappers. Apply UV-resistant polyurethane enamel paint with multi-lingual Telugu/English instructional signs.",
+        image: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 3,
+        title: "Phase 3: Real-Time Telemetry Integration",
+        desc: "Mount battery-powered ESP32 nodes under bin lids. When fill level exceeds 85%, automated Webhook alerts are dispatched to sanitation supervisors and Greenery Club coordinators.",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 4,
+        title: "Phase 4: Drop-Off QR Rewards Verification",
+        desc: "Users scan the hub's unique dynamic QR code upon dropping clean plastics, logging verified kilograms to their profile and earning +30 EcoCoins per drop.",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    fieldDeploymentTesting: {
+      loadTestProtocol: "Tested with 150 daily bottle deposits; 0% sensor jamming over 60-day trial.",
+      washability: "Weatherproof IP65 housing withstands heavy monsoon downpours.",
+      costBenefitRatio: "Reduces campus general waste hauling fees by ₹4,500 monthly."
+    },
+    howToMake: {
+      title: "Smart Campus Recycling Hub Blueprint",
+      timeRequired: "2 Hours Setup",
+      toolsNeeded: ["Jigsaw / Hole Saw", "Riveting Gun", "Spray Paint", "Drill"],
+      localVendors: [
+        { name: "Pragati Greenery Operations Hub", location: "Block C Ground, Pragati Campus", contact: "greenery@pragati.ac.in" }
+      ],
+      blueprintSummary: "Set up 3 color-coded bins with IoT fill alerts, track recycling metrics live, reward depositors!"
+    },
+    learnFaq: [
+      {
+        q: "Why are separate slots necessary for bottles vs wrappers?",
+        a: "Bottles are rigid PET polymers easily melted into yarn, while snack wrappers are multi-layer polymers destined for EcoBrick compression. Pre-sorting prevents batch contamination."
       }
     ]
   },
   {
     id: "sol_4",
-    title: "Campus Green Energy Activities & Carpooling",
-    category: "Clean Transport & Solar Energy",
-    summary: "Set up green energy activities at college, solar micro-power hubs, and carpool ride-share networks.",
-    heroImage: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Prevents 1.2 tons of CO2 per group yearly • Generates 500W clean solar energy on campus",
-    videoUrl: "https://www.youtube.com/embed/2vJ7w1eBf7E",
-    watchUrl: "https://www.youtube.com/watch?v=2vJ7w1eBf7E",
-    videoId: "2vJ7w1eBf7E",
-    thumbnailUrl: "https://img.youtube.com/vi/2vJ7w1eBf7E/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: Setting Up a greeen enery related acticites at college",
-    totalEstimatedBudget: "₹0 - ₹1,200 (Student Campus Energy Blueprint)",
-    costCuttingTip: "Students save 75% on daily fuel expenses by splitting petrol costs with 3 ride partners!",
-    executiveSummary: "Transportation fuel burn and fossil-fuel grid electricity are major carbon emitters for educational institutions. This initiative combines a peer-to-peer campus ride-share matching system with student-built mini solar charging stations to reduce daily fossil fuel consumption, lower parking congestion, and power campus gadgets with clean solar power.",
-    problemContext: "Over 800 students commute daily to Pragati Engineering College from Kakinada, Rajahmundry, and Samalkot using single-occupant motorcycles or cars. By deploying an automated GIS ride-sharing algorithm and campus solar charging trees, carbon footprint drops significantly while building student hands-on renewable energy skills.",
+    title: "4. Cup Library",
+    category: "Circular Reuse System",
+    summary: "Implement a borrow-return system for stainless steel cups in eateries, backed by QR deposit/refund and 3-stage UV-C sanitization.",
+    heroImage: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80",
+    impactMultiplier: "Eliminates 25,000 plastic/wax cups monthly • Earns Vendor Green Certification",
+    videoUrl: "https://www.youtube.com/embed/1kUE0BZtTRc",
+    watchUrl: "https://www.youtube.com/watch?v=1kUE0BZtTRc",
+    videoId: "1kUE0BZtTRc",
+    thumbnailUrl: "https://img.youtube.com/vi/1kUE0BZtTRc/hqdefault.jpg",
+    diyTutorial: "Dedicated Video Guide: Implementing a Circular Cup Library in Small Eateries",
+    totalEstimatedBudget: "₹4,150 (100 Steel Cups + UV-C Sanitizer Box)",
+    costCuttingTip: "Canteens save ₹3,000 monthly on disposable cups by implementing a ₹10 refundable digital deposit!",
+    executiveSummary: "Disposable polypropylene (PP) tea cups and wax-lined paper cups generate massive non-biodegradable waste in canteens and tea kiosks. This Cup Library blueprint implements a circular rental model utilizing food-grade 304 stainless steel cups, an encrypted digital QR deposit-refund protocol, and automated UV-C sterilization.",
+    problemContext: "A single campus canteen consumes over 800 single-use tea cups daily. These cups cannot be recycled due to wax coatings and end up burning in toxic open piles. The Cup Library eliminates recurring cup purchases for vendors while guaranteeing 100% hygienic reusable tableware for students.",
     technicalArchitecture: {
-      solarSpecification: "100W Monocrystalline Photovoltaic Panel (Vmp: 18.2V, Imp: 5.49A, Efficiency: 21.5%)",
-      chargeController: "12V/24V 20A MPPT Solar Charge Controller (Maximum Power Point Tracking)",
-      energyStorage: "12V 42Ah Sealed Lead-Acid / LiFePO4 Battery Pack (DOD 80%, 2000 Cycles)",
-      carpoolAlgorithm: "Dijkstra's Shortest Path & Radius Proximity Matcher (Max Deviation: 1.5 km)"
+      diagramTitle: "Circular QR Token & 3-Stage Sanitization Workflow",
+      cupSpec: "200ml Double-Walled 304 Food-Grade Stainless Steel Cup (Laser-engraved serial QR code)",
+      sanitizationProtocol: "50°C Bio-Enzyme Scrub -> 85°C Thermal Water Jet -> 5-min UV-C Cabinet Sterilization",
+      depositSmartToken: "₹10 Refundable Digital Hold on EcoSphere Wallet released automatically upon cup return"
     },
     materialsNeeded: [
-      { name: "EcoSphere Campus Ride-Matcher App Access", qty: "1 App Module", cost: "Free", source: "Pragati Student Portal" },
-      { name: "100W Rigid Monocrystalline Solar Panel", qty: "1 Panel", cost: "₹3,200", source: "Solar Electronics Mart Kakinada" },
-      { name: "12V MPPT Charge Controller + Dual USB Hub", qty: "1 Module", cost: "₹850", source: "ECE Renewable Energy Lab" },
-      { name: "Commuter Bicycle / Safety Helmet Pool", qty: "1 Unit", cost: "Self-owned", source: "Greenery Club Bike Pool" }
+      { name: "304 Grade Stainless Steel Cups (Set of 100)", qty: "100 Units", cost: "₹2,800", source: "Wholesale Steel Mart Kakinada" },
+      { name: "UV-C 18W Sterilizer Cabinet Box", qty: "1 Unit", cost: "₹850", source: "Electronics Supplier Kakinada" },
+      { name: "Bio-Enzymatic Lemon Sanitizing Wash", qty: "5 Liters", cost: "₹150", source: "Greenery Club DIY Production" },
+      { name: "Drop-Off Return Scanner Kiosk Box", qty: "1 Box", cost: "₹350", source: "Campus Workshop" }
     ],
     actionPlan: [
-      "Phase 1 (Solar Bench Construction): Mount 100W solar panel on outdoor campus study bench with MPPT USB charger.",
-      "Phase 2 (Ride Matching Registration): Students input morning departure points (Kakinada, Samalkot) on EcoSphere.",
-      "Phase 3 (Cost Sharing & Verification): Connect matched 3-student pools via college email ID verification.",
-      "Phase 4 (Weekly Green Energy Hackathons): Organize monthly solar DIY workshops and Friday cycling rallies."
+      "Phase 1 (Stocking & Laser Engraving): Procure 100 steel cups engraved with unique serialized QR tokens.",
+      "Phase 2 (Digital Wallet Integration): Configure ₹10 instant hold and release mechanism in EcoSphere app.",
+      "Phase 3 (Sanitization Station Setup): Install 3-tier wash basin and UV-C germicidal drying cabinet at canteen.",
+      "Phase 4 (Green Shield Certification): Audit canteen waste weekly and grant verified zero-waste eatery status."
     ],
     detailedSteps: [
       {
         step: 1,
-        title: "Phase 1: 100W Solar Charging Bench Hardware Assembly",
-        desc: "Construct a steel frame angled at 17° South (optimal tilt angle for Andhra Pradesh latitude). Mount the 100W monocrystalline solar panel onto the frame. Wire panel leads to a 20A MPPT solar charge controller and connect a 12V 42Ah LiFePO4 battery pack inside a weatherproof box equipped with 4 QC3.0 USB charging ports for student laptops and phones.",
-        image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 1: Cup Inventory Procurement & QR Encoding",
+        desc: "Laser-engrave each cup base with a high-contrast QR identifier linked to the EcoSphere digital library database to track real-time borrows and returns across multiple canteen stalls.",
+        image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 2,
-        title: "Phase 2: Campus Carpool GIS Route Registration",
-        desc: "Log into EcoSphere with Pragati College Gmail. Enter departure origin, class start time, and available vehicle seats (2-wheeler or 4-wheeler). The backend spatial index groups commuters traveling along the same corridor within a 1.5 km pickup radius.",
-        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 2: QR Scan-to-Borrow Counter Interaction",
+        desc: "When ordering tea or coffee, the student scans the stall's EcoSphere QR code to place a ₹10 temporary hold on their wallet. No cash deposit is needed.",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 3,
-        title: "Phase 3: Automated Ride Matching & Fuel Split Calculator",
-        desc: "The system pairs 3 verified student riders together. An integrated UPI split calculator computes daily fuel contribution per passenger (e.g. ₹25/ride vs ₹100 individual petrol cost), automatically crediting +20 EcoCoins to the driver's profile upon verified arrival at Pragati main gate.",
-        image: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 3: Drop-Box Return & Instant Deposit Release",
+        desc: "After finishing the beverage, the student deposits the cup into any campus return drop-box. The integrated optical scanner scans the base, immediately releasing the ₹10 hold and crediting +5 bonus EcoCoins.",
+        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 4,
-        title: "Phase 4: Green Energy Student Workshops & Cycling Rallies",
-        desc: "Host bi-weekly hands-on workshops where students build solar power banks and audit campus energy consumption. Conduct Friday Green Cycling Rallies from Surampalem junction to campus, awarding canteen vouchers to top pedal commuters.",
-        image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
+        title: "Phase 4: 3-Stage Bio-Enzyme & UV-C Sanitization",
+        desc: "Returned cups pass through the 3-stage washing kiosk: bio-enzymatic lemon scrub, 85°C hot water thermal rinse, and 5 minutes of UV-C light sterilization, achieving 99.99% germ elimination.",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
       }
     ],
     fieldDeploymentTesting: {
-      solarYield: "Produces 450 Wh daily energy, charging up to 35 smartphones per sun day.",
-      carbonOffset: "1 carpool group of 4 students eliminates 1.2 metric tons CO2 emissions per academic year.",
-      safetyVerification: "100% verified campus profiles with emergency GPS location broadcasting."
+      loadTestProtocol: "98.4% return rate achieved using ₹10 automated deposit incentive.",
+      washability: "100% bacterial sterilization verified by Pragati Biotechnology lab tests.",
+      costBenefitRatio: "Initial equipment investment recovered in 42 days of operation."
     },
     howToMake: {
-      title: "Setting Up Green Energy Activities & Carpooling at College",
-      timeRequired: "3 Hours for Solar Bench / 5 Mins for Carpool Registration",
-      toolsNeeded: ["Multimeter", "Wire Stripper", "Solar Panel Mounting Kit", "Smart Phone"],
+      title: "Canteen Circular Cup Library Setup Guide",
+      timeRequired: "1 Week Rollout",
+      toolsNeeded: ["Dish Wash Kiosk", "QR Code Scanner", "Storage Racks", "UV Cabinet"],
       localVendors: [
-        { name: "Pragati Greenery Club Bike Hub", location: "Hostel Ground Floor, Pragati Campus", contact: "bikehub@pragati.ac.in" },
-        { name: "Surampalem Solar Tech Solutions", location: "Near Bus Stop, Surampalem", contact: "+91 99890 11223" }
+        { name: "Kakinada Wholesale Steel Emporium", location: "Main Bazaar, Kakinada", contact: "+91 884 2554433" }
       ],
-      blueprintSummary: "Register route on EcoSphere, ride with verified peers, save petrol, charge devices with solar power, earn 10 EcoCoins per km!"
+      blueprintSummary: "Eliminate 25,000 disposable plastic cups monthly using steel cup rental and UV-C sanitization!"
     },
     learnFaq: [
       {
-        q: "Is student carpooling safe?",
-        a: "Yes! All carpool accounts are strictly verified through Pragati official college IDs with mutual student rating reviews."
+        q: "Is drinking from shared steel cups completely hygienic?",
+        a: "Yes. All cups undergo medical-grade 3-stage sanitization (85°C thermal water + UV-C light) far exceeding standard restaurant hygiene protocols."
       }
     ]
   },
   {
     id: "sol_5",
-    title: "Rainwater Harvesting & Micro-Greywater Recycling",
-    category: "Water Conservation",
-    summary: "Capture roof rainwater runoff and filter greywater using low-cost sand-charcoal barrel water filters.",
-    heroImage: "https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Saves up to 10,000 liters of freshwater monthly • Recharges groundwater table",
-    videoUrl: "https://www.youtube.com/embed/7VdO7d0ZfBg",
-    watchUrl: "https://www.youtube.com/watch?v=7VdO7d0ZfBg",
-    videoId: "7VdO7d0ZfBg",
-    thumbnailUrl: "https://img.youtube.com/vi/7VdO7d0ZfBg/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: Low-Cost Sand-Charcoal Barrel Water Filter",
-    totalEstimatedBudget: "₹850 Total (Bio-Sand Barrel Filter System)",
-    costCuttingTip: "Use 4-inch PVC pipes cut in half along with recycled 200L HDPE barrels to save ₹1,200 on commercial filters!",
-    executiveSummary: "Monsoon rainwater runoff from building rooftops is frequently squandered as surface stormwater, leading to localized soil erosion and depleting groundwater reserves. This Low-Cost Bio-Sand and Charcoal Barrel Filter purifies rainwater and AC condensate runoff to drinking and irrigation standards at under ₹900 capital expenditure.",
-    problemContext: "During Andhra Pradesh monsoon seasons, a single 1,000 sq ft rooftop receives over 85,000 liters of pure rainwater. By channeling gutter discharge through a multi-tier gravel, activated carbon, and silica sand filter bed, campus green spaces remain lush without drawing municipal groundwater.",
-    technicalArchitecture: {
-      filterBedDimensions: "200-Liter Food-Grade HDPE Drum (Height: 90cm, Diameter: 58cm)",
-      layer1Bottom: "15cm Coarse River Gravel (Grain size: 12mm - 20mm, acts as structural drain base)",
-      layer2Middle: "20cm Activated Coconut Shell Charcoal (Particle size: 2mm - 4mm, adsorbs VOCs, chlorine, and odors)",
-      layer3Top: "30cm Fine Silica Sand (Grain size: 0.2mm - 0.7mm, physical filtration of turbidity and pathogens)",
-      flowRateCapacity: "12 to 18 Liters Per Minute under gravity head pressure (0.2 bar)"
-    },
-    materialsNeeded: [
-      { name: "110mm Slotted PVC Roof Gutter Pipe (3 meters)", qty: "2 Lengths", cost: "₹280", source: "Surampalem Plumbing Hardware" },
-      { name: "200-Liter HDPE Plastic Drum with Removable Lid", qty: "1 Barrel", cost: "₹420", source: "Kakinada Industrial Barrel Store" },
-      { name: "Coarse River Gravel, Fine Sand & Activated Charcoal", qty: "15kg Each", cost: "₹150", source: "Building Construction Supply Store" },
-      { name: "1/2 inch Brass Tap & Ball Valve Assembly", qty: "1 Set", cost: "₹85", source: "Hardware Shop near College" }
-    ],
-    actionPlan: [
-      "Phase 1 (Roof Gutter Installation): Fix 4-inch PVC gutters along roof eaves at 1:100 slope with leaf mesh guard.",
-      "Phase 2 (Filter Drum Layering): Wash media thoroughly. Layer gravel (bottom 15cm), charcoal (20cm), sand (30cm).",
-      "Phase 3 (First Flush Diverter Setup): Install a 20-liter first-flush pipe to divert initial dust-laden rain.",
-      "Phase 4 (Gravity Drip Connection): Connect bottom outlet tap to garden drip irrigation lines around campus trees."
-    ],
-    detailedSteps: [
-      {
-        step: 1,
-        title: "Phase 1: Roof Gutter Fabrication & First-Flush Diverter",
-        desc: "Mount half-round 110mm PVC gutters along rooftop eaves using galvanized steel brackets pitched at a 1% slope toward the downspout. Install a 20L PVC pipe downspout Tee fitting with a floating ball valve to act as a First Flush Diverter, automatically trapping initial atmospheric dust and bird droppings before water reaches the filter drum.",
-        image: "https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 2,
-        title: "Phase 2: Multi-Tier Bio-Sand & Charcoal Layering",
-        desc: "Drill a 1/2-inch outlet hole 5cm from the bottom of the 200L HDPE drum and fit a brass ball valve with a stainless steel mesh strainer. Thoroughly wash filter media with clean water to eliminate fine dust. Layer media sequentially: 15cm coarse gravel at bottom, 20cm crushed activated charcoal in middle, and 30cm fine silica sand on top. Place a perforated diffuser plate on top to prevent sand disturbance during heavy downpours.",
-        image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 3,
-        title: "Phase 3: Biolayer (Schmutzdecke) Maturation & Flow Test",
-        desc: "Allow a biological film (Schmutzdecke) to develop naturally on top sand surface over 10 days of water flow. This biological layer digests bacteria and organic pathogens. Run a flow rate test to ensure filtration output achieves 15 liters per minute with turbidity < 1 NTU.",
-        image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 4,
-        title: "Phase 4: Campus Drip Line Coupling & Groundwater Recharge",
-        desc: "Connect the filter outlet hose directly to a sub-surface gravity drip line running through Pragati Greenery Club botanical gardens. Surplus filtered water routes into a 3-meter deep gravel recharge pit to elevate campus water table levels.",
-        image: "https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=600&q=80"
-      }
-    ],
-    fieldDeploymentTesting: {
-      turbidityReduction: "Reduces raw rainwater turbidity from 45 NTU down to 0.8 NTU.",
-      maintenanceProtocol: "Scrape top 1cm sand layer every 6 months ('scrape and throw' maintenance method). Re-fill sand after 4 scrapes.",
-      waterSaved: "10,000+ liters harvested monthly per filter unit."
-    },
-    howToMake: {
-      title: "Low-Cost Sand-Charcoal Barrel Water Filter Recipe",
-      timeRequired: "2 Hours",
-      toolsNeeded: ["Hacksaw", "PVC Glue", "Drill Machine", "Wrench"],
-      localVendors: [
-        { name: "Sri Venkateswara Hardware & Pipes", location: "College Road, Surampalem", contact: "+91 884 2776655" },
-        { name: "Kakinada Water Tech & Filters", location: "Main Road, Kakinada", contact: "+91 94402 33445" }
-      ],
-      blueprintSummary: "Gravel at bottom (15cm) -> Charcoal in middle (20cm) -> Fine Sand on top (30cm). Filters 200L rainwater in 15 mins!"
-    },
-    learnFaq: [
-      {
-        q: "Is filtered rainwater safe for garden plants?",
-        a: "Rainwater is naturally soft, free of municipal chlorine, and rich in dissolved nitrates ideal for plant growth."
-      }
-    ]
-  },
-  {
-    id: "sol_6",
-    title: "Zero-Single-Use Canteen & Vendor Policy",
-    category: "Policy & Adoption",
-    summary: "Replace plastic tea cups, cutlery, and straws with reusable steel plates and circular cup libraries in eateries.",
-    heroImage: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Eliminates 25,000 plastic tea cups monthly • Earns Vendor Green Certification",
-    videoUrl: "https://www.youtube.com/embed/1kUE0BZtTRc",
-    watchUrl: "https://www.youtube.com/watch?v=1kUE0BZtTRc",
-    videoId: "1kUE0BZtTRc",
-    thumbnailUrl: "https://img.youtube.com/vi/1kUE0BZtTRc/hqdefault.jpg",
-    diyTutorial: "Dedicated Video Tutorial: Implementing a Circular Cup Library in Small Eateries",
-    totalEstimatedBudget: "₹4,150 (Steel Cup & Dish Library for Canteen)",
-    costCuttingTip: "Canteens save ₹3,000 monthly on disposable plastic cups by implementing a ₹10 refundable dish deposit system!",
-    executiveSummary: "Disposable polypropylene (PP) tea cups and styrofoam snack plates generate massive non-recyclable waste in campus canteens and tea stalls. This blueprint implements a Circular Cup Library system based on reusable stainless steel cups, bio-degradable Areca palm leaf snack trays, and a digital QR deposit-refund system that completely removes single-use plastic cups.",
-    problemContext: "Small eateries consume ~800 disposable tea cups per day. Due to wax and plastic linings, these cups cannot be recycled and burn in toxic open piles. A circular rental library provides high-grade food-safe 304 stainless steel cups backed by a ₹10 refundable security deposit, paying back initial capital investment in under 45 days.",
-    technicalArchitecture: {
-      cupSpecification: "200ml Double-Walled 304 Food-Grade Stainless Steel Cup (Thermal retention: 45 mins, Drop resistant)",
-      washingSanitization: "3-Stage Automated Sanitization (50°C Bio-Enzyme Wash -> Hot Rinse 85°C -> UV-C Cabinet Sterilization)",
-      depositTracking: "EcoSphere QR Smart Token System (Encrypted NFC / QR Token tied to user's EcoCoins wallet)"
-    },
-    materialsNeeded: [
-      { name: "304 Grade Stainless Steel Tea Cups (Set of 100)", qty: "100 Units", cost: "₹2,800", source: "Wholesale Steel Mart Kakinada" },
-      { name: "Pressed Areca Palm Leaf Snack Plates (Pack of 500)", qty: "500 Pieces", cost: "₹350", source: "Local Cottage Industry Surampalem" },
-      { name: "Bio-Enzymatic Lemon Sanitizing Wash", qty: "5 Liters", cost: "₹150", source: "Greenery Club DIY Production" },
-      { name: "UV-C 18W Sterilizer Cabinet Box", qty: "1 Unit", cost: "₹850", source: "Electronics Supplier Kakinada" }
-    ],
-    actionPlan: [
-      "Phase 1 (Cup Library Stocking): Purchase 100 food-grade steel cups stamped with Pragati Greenery logo.",
-      "Phase 2 (Refundable Deposit Rollout): Students pay ₹10 deposit or scan EcoSphere app to borrow steel cup for tea/coffee.",
-      "Phase 3 (Sanitization Kiosk Operation): Cups return to solar wash kiosk for 3-stage hot water & UV-C sterilization.",
-      "Phase 4 (Vendor Green Shield Audit): Audit canteen waste weekly. Award 'Green Shield' vendor badge & EcoCoins."
-    ],
-    detailedSteps: [
-      {
-        step: 1,
-        title: "Phase 1: Stainless Steel Cup Procurement & QR Token Encoding",
-        desc: "Procure 100 units of double-walled 200ml 304 stainless steel cups. Laser-engrave each cup base with a unique serial QR code linked to the EcoSphere inventory ledger. This enables real-time tracking of cup checkouts and returns across multiple campus canteen stalls.",
-        image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 2,
-        title: "Phase 2: QR Deposit-Refund Kiosk Workflow",
-        desc: "When ordering tea or coffee, a student scans the stall's EcoSphere QR code to place a ₹10 temporary hold on their wallet. Upon finishing their beverage, the student drops the cup into the automated return scanner box, immediately unlocking their ₹10 deposit + earning 5 bonus EcoCoins.",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 3,
-        title: "Phase 3: 3-Stage Bio-Enzymatic & UV-C Sanitization Protocol",
-        desc: "Returned cups enter the washing kiosk: (1) Pre-rinse with bio-enzymatic lemon scrub to remove oil/milk film, (2) High-pressure 85°C thermal water wash, and (3) 5-minute UV-C germicidal light exposure inside the drying cabinet, achieving 99.99% bacterial sterilization.",
-        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        step: 4,
-        title: "Phase 4: Areca Leaf Packaging & Green Shield Vendor Certification",
-        desc: "Replace plastic samosa and snack wrappers with 100% compostable pressed Areca palm leaf dishes. Canteens operating 100% plastic-free receive official 'Green Shield' certification badges on the EcoSphere green marketplace.",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
-      }
-    ],
-    fieldDeploymentTesting: {
-      cupReturnRate: "98.4% return rate achieved using ₹10 deposit incentive.",
-      wasteEliminated: "25,000 plastic tea cups eliminated per month per canteen unit.",
-      paybackPeriod: "Initial equipment investment recovered in 42 days."
-    },
-    howToMake: {
-      title: "Canteen Plastic Elimination & Circular Cup Blueprint",
-      timeRequired: "1 Week Rollout",
-      toolsNeeded: ["Dish Wash Kiosk", "QR Code Scanner", "Storage Racks", "UV Cabinet"],
-      localVendors: [
-        { name: "Kakinada Wholesale Steel Emporium", location: "Main Bazaar, Kakinada", contact: "+91 884 2554433" },
-        { name: "Surampalem Eco Leaf Plate Enterprise", location: "Surampalem Industrial Area", contact: "+91 94405 66778" }
-      ],
-      blueprintSummary: "Eliminate 25,000 disposable plastic cups monthly using steel cup rental and bio-degradable Areca leaf plates!"
-    },
-    learnFaq: [
-      {
-        q: "How to maintain 100% hygiene in reusable dishes?",
-        a: "Utensils pass through 3-stage washing: hot water rinse, bio-enzymatic lemon scrub, and UV sterilizer cabinet."
-      }
-    ]
-  },
-  {
-    id: "sol_7",
-    title: "DIY Plastic Upcycling & Bottle Brick Building",
-    category: "Creative Recycling",
-    summary: "Convert non-recyclable soft plastic film into tightly stuffed EcoBricks for campus garden benches step-by-step.",
+    title: "5. Plastic Upcycling",
+    category: "Creative Recycling & DIY",
+    summary: "Transform non-recyclable multi-layer plastic film (MLP) into tightly packed EcoBricks to construct durable campus garden benches and tables.",
     heroImage: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1200&q=80",
-    impactMultiplier: "Locks 500g non-recyclable plastic per bottle • Creates permanent campus garden furniture",
+    impactMultiplier: "Locks away 500g non-recyclable plastic per bottle • Permanent campus garden furniture",
     videoUrl: "https://www.youtube.com/embed/3K1s8aJ89X0",
     watchUrl: "https://www.youtube.com/watch?v=3K1s8aJ89X0",
     videoId: "3K1s8aJ89X0",
     thumbnailUrl: "https://img.youtube.com/vi/3K1s8aJ89X0/hqdefault.jpg",
     diyTutorial: "Dedicated Video Tutorial: Building a Campus EcoBrick Bench Step-by-Step",
     totalEstimatedBudget: "₹0 Free (100% Upcycled Waste Materials)",
-    costCuttingTip: "Build campus benches and planter retaining walls without spending money on commercial concrete bricks!",
-    executiveSummary: "Multi-layered plastic (MLP) wrappers used for chips, biscuits, and snack packaging cannot be recycled through conventional mechanical melting. An EcoBrick is a 1-liter PET bottle packed solid with clean, dry non-recyclable soft plastics to a minimum density of 0.33g/ml. These EcoBricks replace commercial concrete blocks in constructing long-lasting campus garden benches, retaining walls, and outdoor tables.",
-    problemContext: "Snack kiosks produce thousands of soft plastic wrappers daily that litter lawns and wind up in open burning dumps. By mobilizing Pragati Greenery Club students to pack EcoBricks, non-recyclable plastic is permanently sequestered into sturdy, weather-proof outdoor furniture lasting over 100 years.",
+    costCuttingTip: "Build campus benches and retaining walls without spending any money on commercial concrete blocks!",
+    executiveSummary: "Multi-layered plastic (MLP) wrappers used for chips, biscuits, and candy packaging cannot be recycled through conventional mechanical melting. An EcoBrick is a 1-liter PET bottle packed solid with clean, dry non-recyclable soft plastics to a minimum density of 0.33g/ml. These EcoBricks replace commercial concrete blocks in constructing outdoor furniture lasting over 100 years.",
+    problemContext: "Snack kiosks produce thousands of soft plastic wrappers daily that litter lawns and wind up in open burning dumps. By mobilizing Pragati Greenery Club students to pack EcoBricks, non-recyclable plastic is permanently sequestered into sturdy, weather-proof outdoor furniture.",
     technicalArchitecture: {
+      diagramTitle: "EcoBrick High-Density Compression & Adobe Mortar Matrix",
       ecoBrickStandard: "1-Liter PET Bottle packed to Minimum Mass = 330 grams (Target Density: 0.33g to 0.40g per ml)",
       compactionTools: "30cm Solid Wooden Packing Rod (Diameter: 18mm with rounded tip)",
       mortarComposition: "Adobe Soil Mix (1 Part Red Clay Soil, 1 Part Coarse Sand, 0.5 Part Chopped Rice Straw, Water)",
@@ -612,7 +446,7 @@ export const SEVEN_SOLUTIONS = [
     },
     materialsNeeded: [
       { name: "Clean, Dry 1-Liter PET Plastic Bottles", qty: "30 Bottles", cost: "Free", source: "Campus Recycling Drives" },
-      { name: "Non-Recyclable Soft Plastic Wrappers (Multi-layer MLP)", qty: "15 kg", cost: "Free", source: "Hostel & Canteen Snack Waste" },
+      { name: "Non-Recyclable Soft Plastic Wrappers (MLP)", qty: "15 kg", cost: "Free", source: "Hostel & Canteen Snack Waste" },
       { name: "Wooden Compression Rod (30cm length)", qty: "1 Stick", cost: "Free", source: "Recycled Bamboo / Wooden Dowel" },
       { name: "Adobe Mud Mortar / Clay Soil Mix", qty: "2 Buckets", cost: "Free", source: "Campus Soil Pit" }
     ],
@@ -626,13 +460,13 @@ export const SEVEN_SOLUTIONS = [
       {
         step: 1,
         title: "Phase 1: Wrapper Washing, Sun-Drying & Quality Sorting",
-        desc: "Collect multi-layer snack wrappers (biscuit, chip, candy pouches). Wash thoroughly in a tub of soapy water to remove oil and food residues that could cause odor or gas buildup. Spread wrappers on wire mesh trays and sun-dry under direct sunlight for 6 hours until 100% moisture-free.",
+        desc: "Collect multi-layer snack wrappers (biscuit, chip, candy pouches). Wash thoroughly in a tub of soapy water to remove oil and food residues. Spread wrappers on wire mesh trays and sun-dry under direct sunlight for 6 hours until 100% moisture-free.",
         image: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=600&q=80"
       },
       {
         step: 2,
         title: "Phase 2: Precision High-Density Packing (Min 330g Target)",
-        desc: "Push a soft colored plastic wrapper into the bottom of a 1L PET bottle to create an aesthetically pleasing base. Add small pieces of soft plastic wrappers, using a 30cm wooden dowel rod to push plastic firmly into every corner. Rotate the bottle while packing to ensure uniform density. Weigh on a digital scale to verify the bottle reaches at least 330g and cannot be squeezed by hand.",
+        desc: "Push a soft colored plastic wrapper into the bottom of a 1L PET bottle for aesthetics. Add pieces of soft plastic wrappers, using a 30cm wooden dowel rod to push plastic firmly into every corner. Weigh on a digital scale to verify the bottle reaches at least 330g and cannot be squeezed by hand.",
         image: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=600&q=80"
       },
       {
@@ -644,14 +478,14 @@ export const SEVEN_SOLUTIONS = [
       {
         step: 4,
         title: "Phase 4: EcoBrick Horizontal Masonry & Adobe Clay Rendering",
-        desc: "Mix red clay soil, coarse sand, chopped straw, and water into a smooth mortar paste. Lay a 3cm bed of mortar, then place EcoBricks horizontally side-by-side with 2cm gaps filled with mortar. Stagger joints on subsequent layers like brickwork. Render the exterior with a smooth 2cm clay-lime plaster finish and seal with waterproof linseed oil.",
+        desc: "Mix red clay soil, coarse sand, chopped straw, and water into a smooth mortar paste. Lay a 3cm bed of mortar, then place EcoBricks horizontally side-by-side with 2cm gaps filled with mortar. Render the exterior with a smooth 2cm clay-lime plaster finish and seal with waterproof linseed oil.",
         image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80"
       }
     ],
     fieldDeploymentTesting: {
-      densityVerification: "Passed bottle density test (>0.33 g/ml). Zero deformation under 120kg weight.",
-      durabilityExpectancy: "UV-protected adobe render prevents plastic degradation for 100+ years.",
-      plasticSequestered: "30 EcoBricks lock away 15 kg of non-recyclable soft plastic film."
+      loadTestProtocol: "Passed bottle density test (>0.33 g/ml). Zero deformation under 120kg weight.",
+      washability: "UV-protected adobe render prevents plastic degradation for 100+ years.",
+      costBenefitRatio: "30 EcoBricks lock away 15 kg of non-recyclable soft plastic film."
     },
     howToMake: {
       title: "Building Campus EcoBrick Bench Step-by-Step",
@@ -668,10 +502,526 @@ export const SEVEN_SOLUTIONS = [
         a: "Garden retaining walls, flowerbed borders, outdoor seating benches, and park tables."
       }
     ]
+  },
+  {
+    id: "sol_6",
+    title: "6. Green Transport Planner",
+    category: "Zero-Emission Mobility & Packaging",
+    summary: "Eliminate single-use plastic courier packaging, optimize low-carbon transport logistics, and mobilize campus carpooling and cycling.",
+    heroImage: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1200&q=80",
+    impactMultiplier: "Prevents 1.2 tons of CO2 per carpool group • Replaces 10,000 plastic shipping mailers",
+    videoUrl: "https://www.youtube.com/embed/2vJ7w1eBf7E",
+    watchUrl: "https://www.youtube.com/watch?v=2vJ7w1eBf7E",
+    videoId: "2vJ7w1eBf7E",
+    thumbnailUrl: "https://img.youtube.com/vi/2vJ7w1eBf7E/hqdefault.jpg",
+    diyTutorial: "Video Guide: Reusable Parcel Return Loops & Campus Carpooling Matching",
+    totalEstimatedBudget: "₹0 Free Digital Coordination / Saves Fuel Expenses",
+    costCuttingTip: "Students save 75% on daily fuel expenses by splitting rides with 3 carpool partners on EcoSphere!",
+    executiveSummary: "E-commerce deliveries and daily single-occupant commuting generate colossal plastic packaging waste and fossil fuel emissions. This Green Transport Planner combines a reusable returnable packaging pouch system for campus parcels with an automated GIS ride-sharing algorithm to eliminate plastic bubble wrap and slash transport emissions.",
+    problemContext: "Online parcel deliveries to college hostels generate over 400 plastic bubble mailers and adhesive tapes daily that cannot be recycled. Simultaneously, hundreds of single-rider motorcycles consume fossil fuels. Integrating package return drop-boxes with commuter carpooling solves both challenges in one unified system.",
+    technicalArchitecture: {
+      diagramTitle: "GIS Ride Matching & Circular Parcel Envelope Protocol",
+      parcelSystem: "Reinforced Recycled PET / Canvas Pouch with Reusable Zip-Seal & NFC Barcode",
+      carpoolAlgorithm: "Dijkstra's Shortest Path & Proximity Matcher (Max Corridor Deviation: 1.5 km)",
+      carbonAudit: "Real-time CO2 and plastic reduction tracking synced to student EcoSphere profiles"
+    },
+    materialsNeeded: [
+      { name: "Reusable Heavy Canvas Padded Courier Bags", qty: "50 Bags", cost: "₹1,200", source: "Pragati Greenery Logistics Hub" },
+      { name: "Honeycomb Kraft Paper Packaging Roll", qty: "1 Roll (50m)", cost: "₹380", source: "Surampalem Paper Mart" },
+      { name: "EcoSphere GIS Carpool Module Access", qty: "1 App Module", cost: "Free", source: "Pragati Student Portal" }
+    ],
+    actionPlan: [
+      "Phase 1 (Campus Parcel Drop Hub): Set up reusable parcel unboxing station at hostel security gates.",
+      "Phase 2 (Packaging Return Loop): Deliveries unboxed; plastic bubble mailers replaced with returnable canvas totes.",
+      "Phase 3 (Carpool Route Registration): Students and faculty input daily departure corridors on EcoSphere.",
+      "Phase 4 (Rally & Commute Rewards): Award +20 EcoCoins for carpooled trips and Friday cycling rallies."
+    ],
+    detailedSteps: [
+      {
+        step: 1,
+        title: "Phase 1: Reusable Parcel Unboxing Kiosk Setup",
+        desc: "Place a circular parcel unboxing kiosk at hostel main entrances. Students unbox online deliveries immediately, depositing non-plastic honeycomb cushioning and returnable mailers into the collection bin for re-use.",
+        image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 2,
+        title: "Phase 2: Campus Carpool GIS Route Registration",
+        desc: "Log into EcoSphere with Pragati College Gmail. Enter departure origin (Kakinada, Samalkot, Rajahmundry) and available vehicle seats. The spatial matcher groups verified peers traveling the same corridor.",
+        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 3,
+        title: "Phase 3: Automated Ride Matching & Fuel Split Calculator",
+        desc: "The system pairs 3 verified riders together with an integrated UPI split calculator (₹25/ride vs ₹100 individual petrol cost), automatically crediting +20 EcoCoins to the driver's profile upon verified arrival.",
+        image: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 4,
+        title: "Phase 4: Friday Green Cycling Rallies & Solar Hubs",
+        desc: "Join Friday Green Cycling Rallies from Surampalem junction to campus, earning canteen vouchers and charging e-bikes at campus solar-powered benches.",
+        image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    fieldDeploymentTesting: {
+      loadTestProtocol: "Prevents 10,000 single-use plastic courier mailers annually.",
+      washability: "1 carpool group of 4 students eliminates 1.2 metric tons CO2 emissions per academic year.",
+      costBenefitRatio: "100% verified campus profiles with emergency GPS broadcasting."
+    },
+    howToMake: {
+      title: "Setting Up Green Packaging Loops & Campus Carpooling",
+      timeRequired: "5 Mins Registration",
+      toolsNeeded: ["Smart Phone", "EcoSphere App", "Commuter Vehicle / Bicycle"],
+      localVendors: [
+        { name: "Pragati Greenery Club Bike Hub", location: "Hostel Ground Floor, Pragati Campus", contact: "bikehub@pragati.ac.in" }
+      ],
+      blueprintSummary: "Unbox parcels in circular totes, match daily rides with peers, save petrol, earn 10 EcoCoins per km!"
+    },
+    learnFaq: [
+      {
+        q: "How does carpooling reduce plastic pollution?",
+        a: "Optimized logistics reduce courier delivery vehicle trips and single-use packaging runs across regional distribution hubs."
+      }
+    ]
+  },
+  {
+    id: "sol_7",
+    title: "7. EcoSphere Rewards",
+    category: "Gamification & Community Incentives",
+    summary: "Gamified token economy awarding EcoCoins for verified plastic-free actions, unlockable warrior tiers, and real tree planting.",
+    heroImage: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=1200&q=80",
+    impactMultiplier: "Over 14,000 EcoCoins issued • 1,280 real trees planted on Pragati Campus",
+    videoUrl: "https://www.youtube.com/embed/6jQ7y_qQYUA",
+    watchUrl: "https://www.youtube.com/watch?v=6jQ7y_qQYUA",
+    videoId: "6jQ7y_qQYUA",
+    thumbnailUrl: "https://img.youtube.com/vi/6jQ7y_qQYUA/hqdefault.jpg",
+    diyTutorial: "Video Guide: Gamification Engine, Badges, and Redeeming Campus Perks",
+    totalEstimatedBudget: "₹0 Free to Earn & Redeem",
+    costCuttingTip: "Redeem 300 EcoCoins to have the Greenery Club plant a tagged Neem tree in your name with GPS tracking!",
+    executiveSummary: "Sustained behavioral change requires immediate positive reinforcement. EcoSphere Rewards establishes a closed-loop gamified token economy where verifiable eco-actions (IoT bin plastic drops, cloth bag adoption, carpooling) are credited with cryptographically verified EcoCoins redeemable for canteen discounts and real tree plantations.",
+    problemContext: "Traditional environmental appeals rely on passive guilt rather than active incentives. By turning plastic reduction into a competitive campus leaderboard with tier levels (Bronze Warrior to Platinum Eco-Guardian), student participation increases by over 400%.",
+    technicalArchitecture: {
+      diagramTitle: "EcoCoins Minting, Tier Verification & Ledger Proof",
+      mintingTriggers: "IoT Smart Bin Drop (+15), Photo Problem Report (+150), Carpool (+50), Reusable Bag (+25)",
+      tierEngine: "Bronze (<400) -> Silver (400-799) -> Gold (800-1499) -> Platinum Eco-Warrior (1500+)",
+      gcpLedger: "Immutable user transaction logs stored in Google Cloud Firestore with real-time sync"
+    },
+    materialsNeeded: [
+      { name: "Pragati EcoSphere Digital Wallet Account", qty: "1 Account", cost: "Free", source: "Google OAuth Single Sign-On" },
+      { name: "Neem / Peepal Botanical Sapling with GPS Tag", qty: "1 Tree", cost: "300 EcoCoins", source: "Pragati Greenery Club Nursery" },
+      { name: "Campus Canteen Meal & Smoothie Voucher", qty: "1 Voucher", cost: "150 EcoCoins", source: "Campus Food Services" }
+    ],
+    actionPlan: [
+      "Phase 1 (Action Verification): Perform eco-action and scan IoT bin / upload photo report.",
+      "Phase 2 (Automated Coin Minting): System credits EcoCoins directly to your Google Cloud ledger.",
+      "Phase 3 (Tier Advancement): Climb the campus leaderboard and unlock exclusive digital badges.",
+      "Phase 4 (Real-World Redemption): Redeem coins for canteen smoothies, marketplace discounts, or tree planting."
+    ],
+    detailedSteps: [
+      {
+        step: 1,
+        title: "Phase 1: Zero-Plastic Action Logging",
+        desc: "Deposit plastic bottles into IoT bins, decline plastic carry bags at canteen, or complete DIY challenges. The system validates the telemetry payload instantly.",
+        image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 2,
+        title: "Phase 2: Real-Time GCP Cloud Wallet Credit",
+        desc: "Coins are minted instantly to your profile with an animated celebratory particle burst and updated in the campus-wide leaderboard.",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 3,
+        title: "Phase 3: Unlocking Warrior Badges & Tiers",
+        desc: "Progress from Bronze Warrior to Platinum Eco-Warrior. Unlock custom profile badges (Plastic Pioneer, Zero-Waste Hero) recognized on campus.",
+        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        step: 4,
+        title: "Phase 4: Real-World Campus Benefits & Tree Planting",
+        desc: "Spend coins in the Rewards Store: redeem ₹50 canteen vouchers or sponsor a permanent Neem sapling planted on campus with your custom dedication plaque.",
+        image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    fieldDeploymentTesting: {
+      loadTestProtocol: "Over 14,000 EcoCoins successfully transacted without double-spending.",
+      washability: "1,280 real trees verified with satellite geo-tagging on Pragati campus grounds.",
+      costBenefitRatio: "Zero operating overhead; funded through partner vendor sponsorship."
+    },
+    howToMake: {
+      title: "EcoSphere Rewards & Token Economy Playbook",
+      timeRequired: "Instant Rewards",
+      toolsNeeded: ["EcoSphere Wallet", "Google Account"],
+      localVendors: [
+        { name: "Pragati Greenery Club Rewards Desk", location: "Central Library Garden, Pragati Campus", contact: "rewards@pragati.ac.in" }
+      ],
+      blueprintSummary: "Take plastic-free actions, earn EcoCoins automatically, climb leaderboards, plant real trees!"
+    },
+    learnFaq: [
+      {
+        q: "Do EcoCoins expire?",
+        a: "No! EcoCoins remain in your verified GCP profile throughout your entire academic tenure at Pragati Engineering College."
+      }
+    ]
+  }
+];
+
+export const MARKETPLACE_PRODUCTS = [
+  {
+    id: "prod_1",
+    name: "Heavy-Duty Organic Jute & Cotton Carry Bag (Pack of 3)",
+    category: "bags",
+    price: 99,
+    originalPrice: 150,
+    ecoCoinsReward: 25,
+    maxCoinsDiscount: 40,
+    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+    rating: 4.9,
+    reviewsCount: 128,
+    vendorName: "Pragati Eco-Store Cooperative",
+    vendorLocation: "Near Pragati Gate, Surampalem",
+    isTrending: true,
+    badge: "BESTSELLER",
+    plasticOffsetKg: 15.0,
+    description: "Washable, double-stitched organic jute tote capable of holding up to 15kg load. Replaces 500+ single-use polythene bags annually.",
+    inStock: true
+  },
+  {
+    id: "prod_2",
+    name: "Insulated 304 Stainless Steel Water Flask (750ml)",
+    category: "bottles",
+    price: 249,
+    originalPrice: 399,
+    ecoCoinsReward: 50,
+    maxCoinsDiscount: 100,
+    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
+    rating: 4.95,
+    reviewsCount: 210,
+    vendorName: "Earthly Living Essentials",
+    vendorLocation: "Main Road, Kakinada",
+    isTrending: true,
+    badge: "HOT DEAL",
+    plasticOffsetKg: 36.5,
+    description: "Double-walled vacuum insulated flask keeping water chilled for 24h. Certified food-grade 304 steel eliminating plastic bottle purchases forever.",
+    inStock: true
+  },
+  {
+    id: "prod_3",
+    name: "Organic Bamboo Straws & Coconut Fiber Brush Kit (Set of 6)",
+    category: "straws",
+    price: 69,
+    originalPrice: 120,
+    ecoCoinsReward: 20,
+    maxCoinsDiscount: 30,
+    image: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80",
+    rating: 4.8,
+    reviewsCount: 94,
+    vendorName: "BambuCraft EcoWare",
+    vendorLocation: "Cinema Road, Kakinada",
+    isTrending: true,
+    badge: "100% ORGANIC",
+    plasticOffsetKg: 8.0,
+    description: "Handcrafted natural bamboo straws with zero chemical varnish. Includes a pure coconut coir cleaning wire and cotton travel pouch.",
+    inStock: true
+  },
+  {
+    id: "prod_4",
+    name: "Pressed Areca Palm Leaf Dinner Plates Set (Pack of 25)",
+    category: "dinnerware",
+    price: 119,
+    originalPrice: 180,
+    ecoCoinsReward: 30,
+    maxCoinsDiscount: 50,
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+    rating: 4.85,
+    reviewsCount: 76,
+    vendorName: "Surya Green Organics",
+    vendorLocation: "College Road, Surampalem",
+    isTrending: false,
+    badge: "COMPOSTABLE",
+    plasticOffsetKg: 12.5,
+    description: "Naturally shed Areca palm leaves heat-pressed into sturdy, leak-proof dinner plates. 100% backyard compostable in 60 days.",
+    inStock: true
+  },
+  {
+    id: "prod_5",
+    name: "Bamboo Fiber Reusable Coffee & Tea Tumbler (350ml)",
+    category: "bottles",
+    price: 149,
+    originalPrice: 220,
+    ecoCoinsReward: 35,
+    maxCoinsDiscount: 60,
+    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80",
+    rating: 4.75,
+    reviewsCount: 62,
+    vendorName: "GreenSprout India",
+    vendorLocation: "Surampalem Industrial Area",
+    isTrending: true,
+    badge: "ZERO WASTE",
+    plasticOffsetKg: 18.0,
+    description: "Thermal travel tumbler crafted from organic bamboo fiber and silicone thermal grip. Ideal for campus canteen tea and coffee refills.",
+    inStock: true
+  },
+  {
+    id: "prod_6",
+    name: "Upcycled Plastic Eco-Brick Garden Planter Pot (Set of 2)",
+    category: "upcycled",
+    price: 89,
+    originalPrice: 140,
+    ecoCoinsReward: 25,
+    maxCoinsDiscount: 35,
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80",
+    rating: 4.9,
+    reviewsCount: 51,
+    vendorName: "Pragati Greenery Club Upcycling Squad",
+    vendorLocation: "Green Workshop, Pragati Campus",
+    isTrending: false,
+    badge: "UPCYCLED",
+    plasticOffsetKg: 20.0,
+    description: "Molded from 100% shredded and re-melted single-use HDPE bottles collected on Pragati campus. Weather-proof for 50+ years.",
+    inStock: true
+  },
+  {
+    id: "prod_7",
+    name: "Handmade Neem Wood Fork & Spoon Cutlery Kit",
+    category: "cutlery",
+    price: 79,
+    originalPrice: 120,
+    ecoCoinsReward: 20,
+    maxCoinsDiscount: 30,
+    image: "https://images.unsplash.com/photo-1584473457406-6df3a6372104?auto=format&fit=crop&w=600&q=80",
+    rating: 4.8,
+    reviewsCount: 43,
+    vendorName: "TerraPack Innovations",
+    vendorLocation: "Main Bazaar, Samalkot",
+    isTrending: false,
+    badge: "NATURAL NEEM",
+    plasticOffsetKg: 6.0,
+    description: "Antibacterial natural neem wood cutlery set with organic cotton carry pouch. Say goodbye to single-use plastic takeaway spoons.",
+    inStock: true
+  },
+  {
+    id: "prod_8",
+    name: "Honeycomb Recycled Paper Bubble-Wrap Roll (50 Meters)",
+    category: "packaging",
+    price: 199,
+    originalPrice: 299,
+    ecoCoinsReward: 40,
+    maxCoinsDiscount: 80,
+    image: "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?auto=format&fit=crop&w=600&q=80",
+    rating: 4.88,
+    reviewsCount: 88,
+    vendorName: "TerraPack Innovations",
+    vendorLocation: "Main Bazaar, Samalkot",
+    isTrending: true,
+    badge: "ECO PACKAGING",
+    plasticOffsetKg: 25.0,
+    description: "Expanding kraft paper packaging mesh that cushions fragile items without plastic bubble wrap. 100% recyclable and biodegradable.",
+    inStock: true
+  }
+];
+
+export const PARTNER_COMPANIES = [
+  {
+    id: "comp_1",
+    name: "GreenSprout India",
+    category: "Sustainable Packaging & Bio-Plastics",
+    location: "Surampalem & Kakinada",
+    rating: 4.9,
+    verified: true,
+    badge: "PLATINUM PARTNER",
+    logo: "🌿",
+    description: "Pioneering cassava-starch biofilm wraps and compostable tableware across East Godavari educational institutions.",
+    impactStat: "12.4 Tons Plastic Saved",
+    discountCode: "GREENSPROUT20",
+    discountPercent: 20
+  },
+  {
+    id: "comp_2",
+    name: "BambuCraft EcoWare",
+    category: "Organic Bamboo & Wood Utensils",
+    location: "Kakinada Industrial Area",
+    rating: 4.85,
+    verified: true,
+    badge: "VERIFIED VENDOR",
+    logo: "🎋",
+    description: "Empowering rural artisans to manufacture certified food-safe bamboo straws, toothbrushes, and tumblers.",
+    impactStat: "85,000 Straws Replaced",
+    discountCode: "BAMBU15",
+    discountPercent: 15
+  },
+  {
+    id: "comp_3",
+    name: "TerraPack Innovations",
+    category: "Circular Courier & Protective Packaging",
+    location: "Samalkot Hub",
+    rating: 4.92,
+    verified: true,
+    badge: "OFFICIAL PARTNER",
+    logo: "📦",
+    description: "Providing 100% biodegradable honeycomb paper padding and returnable canvas courier pouches for campus parcels.",
+    impactStat: "40,000 Parcels Greened",
+    discountCode: "TERRAPACK10",
+    discountPercent: 10
+  },
+  {
+    id: "comp_4",
+    name: "Pragati Eco-Store Cooperative",
+    category: "Campus Zero-Waste Store & Upcycling",
+    location: "Pragati Engineering College",
+    rating: 4.98,
+    verified: true,
+    badge: "STUDENT LED",
+    logo: "🎓",
+    description: "Student-run sustainable enterprise manufacturing denim tote bags, upcycled planter pots, and steel cup libraries.",
+    impactStat: "1,420 kg Campus Plastic Diverted",
+    discountCode: "PRAGATI_ECO15",
+    discountPercent: 15
+  }
+];
+
+export const PLASTIC_ALTERNATIVES = [
+  {
+    plasticItem: "Single-Use Plastic Water Bottle",
+    alternative: "Insulated 304 Stainless Steel or Copper Flask",
+    impact: "Saves 365 plastic bottles per person/year. Keeps water cool 24 hours.",
+    whereToFind: "Eco Marketplace (₹249) / Pragati Eco-Store",
+    category: "Bottles",
+    diyOption: "Clean and reuse high-grade glass bottles with cork sleeves"
+  },
+  {
+    plasticItem: "Thin Polythene Carry Bags (Plastics < 50 microns)",
+    alternative: "Washable Organic Cotton / Upcycled Denim Tote Bag",
+    impact: "Saves ~500 plastic carry bags annually. Carries up to 15kg without tearing.",
+    whereToFind: "Eco Marketplace (₹99 for pack of 3) / DIY Jeans Upcycling Guide",
+    category: "Bags",
+    diyOption: "Stitch old denim jeans legs into a 42cm x 48cm tote in 25 mins"
+  },
+  {
+    plasticItem: "Disposable Plastic Drinking Straws",
+    alternative: "Handcrafted Organic Bamboo or Borosilicate Glass Straws",
+    impact: "Composts in 90 days. Completely eliminates marine turtle ingestion risks.",
+    whereToFind: "Eco Marketplace (₹69 Set of 6 with cleaning brush)",
+    category: "Straws",
+    diyOption: "Use dried hollow papaya leaf stems as natural organic straws"
+  },
+  {
+    plasticItem: "Styrofoam & Plastic Disposable Plates",
+    alternative: "Heat-Pressed Areca Palm Leaf Dishes or Banana Leaves",
+    impact: "100% chemical-free and backyard compostable in 60 days into garden manure.",
+    whereToFind: "Eco Marketplace (₹119 for 25 Pcs) / Local Cottage Industry",
+    category: "Dinnerware",
+    diyOption: "Harvest fresh broad banana leaves cut into circular placemats"
+  },
+  {
+    plasticItem: "Single-Use Polypropylene Tea/Coffee Cups",
+    alternative: "Reusable 304 Stainless Steel Cup / Ceramic Mug",
+    impact: "Eliminates 25,000 plastic cups monthly per canteen with zero microplastics.",
+    whereToFind: "Pragati Campus Cup Library (₹10 Refundable QR Deposit)",
+    category: "Cups",
+    diyOption: "Carry a personal 350ml insulated bamboo tumbler to food stalls"
+  },
+  {
+    plasticItem: "Plastic Bubble Wrap for Parcel Packaging",
+    alternative: "Expanded Honeycomb Kraft Paper Mesh & Cassava Starch Film",
+    impact: "Recyclable with standard cardboard. Biodegrades safely in soil without microplastics.",
+    whereToFind: "TerraPack Innovations / Eco Marketplace (₹199 Roll)",
+    category: "Packaging",
+    diyOption: "Shred discarded campus newspaper sheets into zig-zag padding"
+  },
+  {
+    plasticItem: "Plastic Toothbrushes (Nylon & Polypropylene)",
+    alternative: "100% Compostable Organic Bamboo Toothbrush with Charcoal Bristles",
+    impact: "Replaces 4 plastic handles per person/year that would otherwise persist 500 years.",
+    whereToFind: "Eco Marketplace / BambuCraft (₹99 for Pack of 4)",
+    category: "Personal Care",
+    diyOption: "Use traditional fresh Neem twigs (Datun) for oral hygiene"
+  }
+];
+
+export const GAMIFICATION_BADGES = [
+  {
+    id: "badge_1",
+    title: "Plastic Pioneer",
+    icon: "ShieldCheck",
+    criteria: "Avoided 100 single-use plastic items",
+    coinsReward: 100,
+    unlocked: true,
+    level: "Tier 1"
+  },
+  {
+    id: "badge_2",
+    title: "IoT Bin Innovator",
+    icon: "Cpu",
+    criteria: "Deposited plastic in campus IoT smart bin 10 times",
+    coinsReward: 150,
+    unlocked: true,
+    level: "Tier 2"
+  },
+  {
+    id: "badge_3",
+    title: "Cup Library Champion",
+    icon: "Coffee",
+    criteria: "Used circular stainless steel cups for 20 canteen orders",
+    coinsReward: 200,
+    unlocked: false,
+    level: "Tier 2"
+  },
+  {
+    id: "badge_4",
+    title: "Upcycling Artisan",
+    icon: "Sparkles",
+    criteria: "Packed 5 EcoBricks or completed a DIY tote bag tutorial",
+    coinsReward: 250,
+    unlocked: true,
+    level: "Tier 3"
+  },
+  {
+    id: "badge_5",
+    title: "Tree Guardian",
+    icon: "Trees",
+    criteria: "Redeemed EcoCoins to plant a real tree on Pragati campus",
+    coinsReward: 300,
+    unlocked: true,
+    level: "Master"
   }
 ];
 
 export const SUSTAINABLE_GUIDES_PDF_DATA = {
+  iotBin: {
+    id: "pdf_iot_bin",
+    title: "DIY Smart IoT Recycling Dustbin Assembly & Firmware Manual",
+    subtitle: "ESP32 Ultrasonic Sensor, SG90 Servo & GCP Cloud Telemetry Blueprint",
+    version: "3.2 - Pragati ECE Innovation Edition",
+    pages: [
+      {
+        pageNumber: 1,
+        heading: "1. Hardware Architecture & Circuit Pinout Topology",
+        content: `Microcontroller Specifications:
+• Board: ESP32-WROOM-32D (240MHz Dual-Core Tensilica LX6, 520KB SRAM, Integrated 802.11 b/g/n Wi-Fi & BLE 4.2).
+• Sensor: HC-SR04 Ultrasonic Distance Transducer (VCC: 5V DC, Trigger Pin: GPIO 5, Echo Pin: GPIO 18, Resolution: 0.3cm).
+• Actuator: SG90 9g Micro Servo Motor (Signal Pin: GPIO 13, Operating Torque: 1.8 kg-cm, 90° Sweep in 0.12 sec).
+• Display: 0.96 inch I2C Monochrome OLED Display 128x64 (SDA: GPIO 21, SCL: GPIO 22, I2C Address: 0x3C).
+• Power Management: 3.7V 2600mAh 18650 Li-ion cell connected via TP4056 charge board with step-up 5V boost regulator.
+
+Wiring Sequence:
+1. Connect breadboard 5V power bus to ESP32 VIN pin and Ground to GND pin.
+2. Wire HC-SR04 VCC -> 5V, GND -> GND, TRIG -> GPIO 5, ECHO -> GPIO 18.
+3. Wire SG90 Servo RED -> 5V, BROWN -> GND, ORANGE Signal -> GPIO 13.
+4. Wire I2C OLED VCC -> 3.3V, GND -> GND, SDA -> GPIO 21, SCL -> GPIO 22.`
+      },
+      {
+        pageNumber: 2,
+        heading: "2. Firmware Logic, GCP Cloud REST Sync & QR Rewards",
+        content: `Operational Execution Loop:
+1. Boot Calibration: ESP32 boots, establishes WPA2 Wi-Fi connection, initializes I2C OLED with 'EcoSphere IoT Bin Online'.
+2. Distance Sampling: HC-SR04 triggers ultrasonic pulses every 200ms.
+3. Deposit Detection: When distance drops between 2.0cm and 18.0cm for >300ms, the system registers a plastic bottle deposit.
+4. Servo Actuation: SG90 servo swings lid open 90° for 4.0 seconds to accept waste, then softly returns to 0° closed.
+5. GCP Cloud Telemetry: Formats JSON payload containing {binId: 'bin_p1', fillPct: 72.4, plasticCount: 142, battery: 92} and executes HTTPS POST to EcoSphere Cloud Firestore endpoint.
+6. Gamified Reward: OLED generates an encrypted dynamic QR token valid for +15 EcoCoins on the student's mobile wallet.`
+      }
+    ]
+  },
   compost: {
     id: "pdf_compost",
     title: "3-Bin Apartment & Hostel Aerobic Composting System Manual",
@@ -683,7 +1033,7 @@ export const SUSTAINABLE_GUIDES_PDF_DATA = {
         heading: "1. Introduction & Aerobic Decomposition Principles",
         content: `Organic food scraps account for over 55% of everyday household waste. When disposed into closed plastic garbage bags, wet waste breaks down anaerobically, generating toxic leachate fluid and high concentrations of methane gas (CH4).
 
-Aerobic composting uses beneficial micro-organisms (Lactobacillus, Actinomyces, and Trichoderma fungi) in the presence of continuous oxygen flow to decompose organic waste into rich humic fertilizer without producing foul smells.
+Aerobic composting uses beneficial micro-organisms in the presence of continuous oxygen flow to decompose organic waste into rich humic fertilizer without producing foul smells.
 
 Key Parameters for Success:
 • Carbon-to-Nitrogen (C:N) Ratio: 30:1 (2 parts dry carbon browns to 1 part wet nitrogen greens)
@@ -705,73 +1055,7 @@ Daily Layering Routine:
 • Step A: Spread wet food scraps evenly over the cocopeat bed (max 2 inches thickness).
 • Step B: Sprinkle 1 tablespoon of microbial bio-inoculum powder across the surface.
 • Step C: Cover completely with a 1-inch blanket of dry leaves or sawdust to prevent fruit flies.
-• Rotation: When Bin 1 fills after ~20 days, rotate it to the middle position and place empty Bin 2 on top.
-
-Harvesting Black Gold:
-After 45 days of curing, the waste transforms into dark brown, sweet-smelling organic compost. Sift through a 5mm wire sieve and apply to home potted plants or campus gardens!`
-      }
-    ]
-  },
-  rainwater: {
-    id: "pdf_rainwater",
-    title: "Rooftop Rainwater & Bio-Sand Charcoal Water Filter Manual",
-    subtitle: "Low-Cost Rooftop Harvesting & Water Purification Blueprint",
-    version: "3.1 - Pragati Engineering College Lab Standard",
-    pages: [
-      {
-        pageNumber: 1,
-        heading: "1. Rooftop Hydrology & First-Flush Filtration Principles",
-        content: `Rooftop rainwater is naturally soft, free of municipal chlorine treatment, and rich in dissolved nitrates ideal for groundwater recharge and vegetation growth.
-
-A single 1,000 sq ft rooftop receives approximately 85,000 liters of pure water during Andhra Pradesh monsoon cycles.
-
-First-Flush Diverter Architecture:
-The initial 10-15 minutes of rainfall washes accumulated rooftop dust, bird droppings, and leaves. A 20-liter PVC first-flush pipe traps this contaminated initial runoff using a floating ball mechanism, ensuring only clean rainwater proceeds into the filtration drum.`
-      },
-      {
-        pageNumber: 2,
-        heading: "2. Bio-Sand & Charcoal Barrel Construction Guide",
-        content: `Filter Drum Layering Specifications (200-Liter HDPE Barrel):
-• Bottom Layer (15cm): Coarse River Gravel (12mm - 20mm particle size). Holds brass outlet tap screen.
-• Middle Layer (20cm): Activated Coconut Shell Charcoal (2mm - 4mm). Adsorbs heavy metals, odors, and dissolved organic carbon.
-• Top Layer (30cm): Fine Silica Sand (0.2mm - 0.7mm). Physical micro-filtration trapping suspended solids and turbidity.
-• Diffuser Plate: Perforated plastic plate on top sand surface to prevent cratering during heavy rain flows.
-
-Operation & Maintenance:
-- Flow Rate: Delivers 15 to 18 Liters/minute under gravity pressure head.
-- Scrape-and-Throw Maintenance: Scrape off top 1cm sand layer every 6 months to restore full flow rate.`
-      }
-    ]
-  },
-  solar: {
-    id: "pdf_solar",
-    title: "5V Solar Phone Charger & College Renewable Energy Blueprint",
-    subtitle: "Hands-on DIY Monocrystalline Photovoltaic & MPPT Power Hub",
-    version: "1.8 - Pragati ECE Innovation Hub",
-    pages: [
-      {
-        pageNumber: 1,
-        heading: "1. Photovoltaic Conversion & MPPT Solar Electronics",
-        content: `Solar energy harvesting converts solar photons directly into Direct Current (DC) electricity via the photoelectric effect in semiconductor silicon wafers.
-
-System Component Specifications:
-• Photovoltaic Panel: 100W Monocrystalline Silicon Panel (Vmp: 18.2V, Imp: 5.49A, Open Circuit Voc: 22.1V).
-• Charge Controller: 20A MPPT (Maximum Power Point Tracking) digital controller maintaining 98% efficiency.
-• Energy Storage: 12V 42Ah LiFePO4 Battery with BMS (Battery Management System protecting against over-voltage & thermal runaway).
-• Output Module: Step-down Buck Converter delivering Dual 5V 2.4A QC3.0 USB ports for mobile phone and laptop charging.`
-      },
-      {
-        pageNumber: 2,
-        heading: "2. Wiring Schematic & Safety Protocol",
-        content: `Wiring Sequence:
-1. Connect 12V LiFePO4 battery terminals to Charge Controller BATT+ and BATT- FIRST to calibrate system voltage.
-2. Connect 100W Solar Panel positive (+) and negative (-) cables to PV IN terminals.
-3. Wire USB Buck converter to LOAD output terminals.
-
-Safety Checklist:
-- Install a 15A inline DC fuse between solar panel and charge controller.
-- Mount panel facing 17° South at Pragati Campus coordinates (16.98° N, 82.16° E).
-- Use 4mm² UV-resistant solar extension cables.`
+• Rotation: When Bin 1 fills after ~20 days, rotate it to the middle position and place empty Bin 2 on top.`
       }
     ]
   },
@@ -883,8 +1167,8 @@ export const VENDORS_CATALOG = [
     location: "Near Main Gate, Pragati Engineering College",
     rating: 4.9,
     products: [
-      { name: "Organic Banana-Fiber Tote Bag", price: "₹49", coinsReward: 15, image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=400&q=80" },
-      { name: "Reusable Stainless Steel Water Flask 750ml", price: "₹299", coinsReward: 50, image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=400&q=80" },
+      { name: "Organic Jute Carry Tote Bag", price: "₹49", coinsReward: 15, image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=400&q=80" },
+      { name: "Reusable Stainless Steel Water Flask 750ml", price: "₹249", coinsReward: 50, image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=400&q=80" },
       { name: "Bamboo Toothbrush (Pack of 4)", price: "₹99", coinsReward: 20, image: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=400&q=80" }
     ],
     discountCode: "PRAGATI_ECO15",
@@ -932,7 +1216,7 @@ export const DIY_IOT_DUSTBIN_GUIDE = {
 #include <LiquidCrystal_I2C.h>
 
 const char* WIFI_SSID = "PRAGATI_CAMPUS_WIFI";
-const char* WIFI_PASS = "GreenTomorrow2026";
+const char* WIFI_PASS = "PlasticFreeTomorrow2026";
 const char* ECOSPHERE_API = "https://ecosphere.gcp.cloud/api/v1/recycle";
 
 #define TRIG_PIN 5

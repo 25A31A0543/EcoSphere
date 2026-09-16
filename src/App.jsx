@@ -8,7 +8,6 @@ import SolutionDashboard from './components/SolutionDashboard';
 import EcoDashboard from './components/EcoDashboard';
 import GreenMarketplace from './components/GreenMarketplace';
 import SmartRecyclingHub from './components/SmartRecyclingHub';
-import EcoCommunity from './components/EcoCommunity';
 import SustainableGuide from './components/SustainableGuide';
 import TransportPlanner from './components/TransportPlanner';
 import EcoRewards from './components/EcoRewards';
@@ -122,13 +121,6 @@ export default function App() {
             user={user} 
             onUpdateUser={(updated) => setUser(updated)}
             onNavigateToSection={(section) => setActiveTab(section)}
-          />
-        )}
-
-        {activeTab === 'community' && (
-          <EcoCommunity 
-            user={user} 
-            onUpdateUser={(updated) => setUser(updated)} 
           />
         )}
 

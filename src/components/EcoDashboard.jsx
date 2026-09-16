@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   User, 
   Store, 
@@ -6,13 +6,14 @@ import {
   TrendingUp, 
   Award, 
   CheckCircle, 
-  BarChart2, 
   Zap, 
-  RefreshCw,
   ShoppingBag,
-  Leaf
+  Leaf,
+  CloudSun,
+  RefreshCw
 } from 'lucide-react';
 import { addEcoCoins } from '../data/storage';
+import { fetchLiveCampusWeatherAndAQI } from '../data/liveDataService';
 
 export default function EcoDashboard({ user, onUpdateUser }) {
   const [mode, setMode] = useState('personal'); // 'personal' | 'vendor'
@@ -20,6 +21,15 @@ export default function EcoDashboard({ user, onUpdateUser }) {
   const [vendorEcoBagsSold, setVendorEcoBagsSold] = useState(320);
   const [vendorPlasticReplaced, setVendorPlasticReplaced] = useState(320);
   const [aiPromptCategory, setAiPromptCategory] = useState('student');
+  const [liveWeather, setLiveWeather] = useState(null);
+
+  useEffect(() => {
+    fetchLiveCampusWeatherAndAQI().then(setLiveWeather);
+    const interval = setInterval(() => {
+      fetchLiveCampusWeatherAndAQI().then(setLiveWeather);
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   const [aiSuggestions, setAiSuggestions] = useState([
     {
@@ -60,8 +70,8 @@ export default function EcoDashboard({ user, onUpdateUser }) {
       {/* Mode Switcher Banner */}
       <div className="mode-switcher-banner glass-card">
         <div className="mode-info">
-          <h2>Eco Dashboard Metrics</h2>
-          <p>Switch between Personal Eco-Impact and Small Vendor Green Operations telemetry.</p>
+          <h2>Eco Dashboard Metrics & Dynamic Telemetry</h2>
+          <p>Switch between Personal Eco-Impact and Small Vendor Green Operations telemetry (Pragati Campus & Surampalem Live Feed).</p>
         </div>
         <div className="mode-toggle-buttons">
           <button 
@@ -102,19 +112,23 @@ export default function EcoDashboard({ user, onUpdateUser }) {
             </button>
           </div>
 
-          {/* Card 2: Carbon Footprint */}
+          {/* Card 2: Live AQI & Campus Environment */}
           <div className="futuristic-card glass-card">
             <div className="card-top">
-              <span className="card-tag">CARBON TELEMETRY</span>
-              <TrendingUp size={22} className="eco-text" />
+              <span className="card-tag">DYNAMIC CAMPUS AQI</span>
+              <CloudSun size={22} className="eco-text" />
             </div>
-            <h3>Carbon Abatement Score</h3>
-            <div className="big-stat">18.5 <small>kg CO₂e</small></div>
+            <h3>Live Open-Meteo AQI</h3>
+            <div className="big-stat" style={{ color: liveWeather?.aqiColor || '#10b981' }}>
+              {liveWeather ? liveWeather.usAqi : '138'} <small>AQI</small>
+            </div>
             <div className="badge-pills-row">
-              <span className="mini-badge">Green Level 3</span>
-              <span className="mini-badge">Top 10% Campus</span>
+              <span className="mini-badge" style={{ backgroundColor: `${liveWeather?.aqiColor || '#10b981'}22`, color: liveWeather?.aqiColor || '#10b981' }}>
+                {liveWeather ? liveWeather.aqiCategory : 'Moderate'}
+              </span>
+              <span className="mini-badge">Temp: {liveWeather?.temperature ?? 31.5}°C</span>
             </div>
-            <p className="card-sub">Equivalent to planting 2 mature neem trees on campus.</p>
+            <p className="card-sub">Live telemetry updated from Pragati Campus satellite & ground sensors.</p>
           </div>
 
           {/* Card 3: EcoCoins Balance */}

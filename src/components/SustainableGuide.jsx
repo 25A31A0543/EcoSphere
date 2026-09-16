@@ -123,23 +123,33 @@ export default function SustainableGuide() {
             </div>
           </div>
 
-          {/* Arduino / ESP32 C++ Code Editor Section */}
-          <div className="code-editor-box glass-card">
-            <div className="editor-top-bar">
-              <div className="editor-title">
-                <Code size={18} className="eco-text" />
-                <span>ESP32 Firmware Code (Arduino C++)</span>
+          {/* Arduino / ESP32 C++ Code Section wrapped in Progressive Disclosure Accordion */}
+          <details className="code-editor-accordion glass-card" style={{ marginTop: '20px', padding: '16px', borderRadius: '16px', cursor: 'pointer' }}>
+            <summary style={{ fontSize: '0.95rem', fontWeight: 800, color: 'var(--emerald-400)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', userSelect: 'none' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Code size={18} />
+                <span>Show Complete ESP32 Firmware Source Code (Arduino C++) ▾</span>
               </div>
-              <button className="copy-code-btn" onClick={handleCopyCode}>
-                {copiedCode ? <Check size={16} /> : <Copy size={16} />}
-                <span>{copiedCode ? 'Code Copied to Clipboard!' : 'Copy Complete Firmware Code'}</span>
-              </button>
-            </div>
+              <span style={{ fontSize: '0.72rem', background: 'rgba(255,255,255,0.1)', padding: '2px 8px', borderRadius: '8px', color: '#fff' }}>Click to Expand Code</span>
+            </summary>
 
-            <pre className="code-block-display">
-              <code>{guideData.cppCode}</code>
-            </pre>
-          </div>
+            <div className="code-editor-box glass-card" style={{ marginTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
+              <div className="editor-top-bar" style={{ paddingTop: '12px' }}>
+                <div className="editor-title">
+                  <Code size={18} className="eco-text" />
+                  <span>ESP32 Firmware Code (Arduino C++)</span>
+                </div>
+                <button className="copy-code-btn" onClick={handleCopyCode}>
+                  {copiedCode ? <Check size={16} /> : <Copy size={16} />}
+                  <span>{copiedCode ? 'Code Copied to Clipboard!' : 'Copy Complete Firmware Code'}</span>
+                </button>
+              </div>
+
+              <pre className="code-block-display">
+                <code>{guideData.cppCode}</code>
+              </pre>
+            </div>
+          </details>
         </div>
       )}
 
